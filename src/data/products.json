@@ -6,15 +6,42 @@
     "note": "Single source of truth. Edit here and all 5 language versions update."
   },
   "categories": [
-    { "id": "split", "label": "Split AC" },
-    { "id": "inverter", "label": "Inverter AC" },
-    { "id": "solar", "label": "Solar AC" },
-    { "id": "portable", "label": "Portable" },
-    { "id": "commercial", "label": "Commercial" },
-    { "id": "vrf", "label": "Commercial VRF" },
-    { "id": "parts", "label": "Parts & Tools" },
-    { "id": "coldchain", "label": "Cold Chain" },
-    { "id": "others", "label": "Others" }
+    {
+      "id": "split",
+      "label": "Split AC"
+    },
+    {
+      "id": "inverter",
+      "label": "Inverter AC"
+    },
+    {
+      "id": "solar",
+      "label": "Solar AC"
+    },
+    {
+      "id": "portable",
+      "label": "Portable"
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial"
+    },
+    {
+      "id": "vrf",
+      "label": "Commercial VRF"
+    },
+    {
+      "id": "parts",
+      "label": "Parts & Tools"
+    },
+    {
+      "id": "coldchain",
+      "label": "Cold Chain"
+    },
+    {
+      "id": "others",
+      "label": "Others"
+    }
   ],
   "products": [
     {
@@ -23,7 +50,10 @@
       "name": "12000 BTU Split AC — R410A Cooling Only",
       "model": "Midea 12K Standard",
       "btu": "12000 BTU (1.5HP)",
-      "tags": ["best-seller", "verified"],
+      "tags": [
+        "best-seller",
+        "verified"
+      ],
       "price": "$125–155",
       "moq": 10,
       "image": "p1.jpg",
@@ -35,7 +65,10 @@
       "name": "12000 BTU Inverter Split AC — DC Inverter",
       "model": "Midea 12K Inverter",
       "btu": "12000 BTU (1.5HP)",
-      "tags": ["inverter", "verified"],
+      "tags": [
+        "inverter",
+        "verified"
+      ],
       "price": "$159–175",
       "moq": 10,
       "image": "p2.jpg",
@@ -47,7 +80,10 @@
       "name": "12000 BTU Solar AC — DC 48V Hybrid",
       "model": "Midea Solar AC 12K",
       "btu": "12000 BTU (1.5HP)",
-      "tags": ["solar", "verified"],
+      "tags": [
+        "solar",
+        "verified"
+      ],
       "price": "$290+",
       "moq": 10,
       "image": "p3.jpg",
@@ -59,7 +95,10 @@
       "name": "9000 BTU Portable AC — Self Evaporating",
       "model": "Midea Portable 9K",
       "btu": "9000 BTU (1HP)",
-      "tags": ["portable", "verified"],
+      "tags": [
+        "portable",
+        "verified"
+      ],
       "price": "$180–250",
       "moq": 20,
       "image": "p4.jpg",
@@ -71,7 +110,10 @@
       "name": "24000 BTU Floor Standing AC — 3HP Cabinet",
       "model": "Midea Floor Stand 24K",
       "btu": "24000 BTU (3HP)",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "$350–450",
       "moq": 5,
       "image": "p5.jpg",
@@ -83,7 +125,10 @@
       "name": "P9-Cassette On-Off R32 — 36000 BTU Cooling Only",
       "model": "Midea P9 Cassette",
       "btu": "36000 BTU (4.5HP)",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "$550–700",
       "moq": 5,
       "image": "P9-Cassette.jpeg",
@@ -95,7 +140,10 @@
       "name": "UVC Sanitizer Light for Split AC Indoor Unit",
       "model": "Midea UVC Light",
       "btu": "N/A",
-      "tags": ["high-margin", "verified"],
+      "tags": [
+        "high-margin",
+        "verified"
+      ],
       "price": "$12–25",
       "moq": 100,
       "image": "p7.jpg",
@@ -107,7 +155,10 @@
       "name": "AC Installation Kit & Spare Parts — 3M Pipe + PCB + Motor",
       "model": "Midea Install Kit",
       "btu": "N/A",
-      "tags": ["parts-kit", "verified"],
+      "tags": [
+        "parts-kit",
+        "verified"
+      ],
       "price": "$25–45",
       "moq": 50,
       "image": "p8.jpg",
@@ -119,7 +170,10 @@
       "name": "18000 BTU Inverter Split AC",
       "model": "Midea 18K Inverter",
       "btu": "18000 BTU (2HP)",
-      "tags": ["inverter", "verified"],
+      "tags": [
+        "inverter",
+        "verified"
+      ],
       "price": "$260–280",
       "moq": 10,
       "image": "p9.jpg",
@@ -131,7 +185,10 @@
       "name": "Ghana Energy-Efficient 12K",
       "model": "Midea Eco 12K",
       "btu": "12000 BTU (1.5HP)",
-      "tags": ["best-seller", "verified"],
+      "tags": [
+        "best-seller",
+        "verified"
+      ],
       "price": "$141",
       "moq": 10,
       "image": "p10.jpg",
@@ -143,7 +200,10 @@
       "name": "Solar AC Kit (Panels + Controller)",
       "model": "Midea Solar Kit",
       "btu": "N/A",
-      "tags": ["solar", "verified"],
+      "tags": [
+        "solar",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 5,
       "image": "p11.jpg",
@@ -155,7 +215,10 @@
       "name": "Window AC 12K",
       "model": "Midea Window 12K",
       "btu": "12000 BTU (1.5HP)",
-      "tags": ["best-seller", "verified"],
+      "tags": [
+        "best-seller",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 10,
       "image": "p12.jpg",
@@ -167,7 +230,10 @@
       "name": "Cassette AC 24K",
       "model": "Midea Cassette 24K",
       "btu": "24000 BTU (3HP)",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 5,
       "image": "p13.jpg",
@@ -179,7 +245,10 @@
       "name": "Duct AC 18K",
       "model": "Midea Duct 18K",
       "btu": "18000 BTU (2HP)",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 5,
       "image": "p14.jpg",
@@ -191,7 +260,10 @@
       "name": "AC Installation Kit (Compact)",
       "model": "Midea Compact Kit",
       "btu": "N/A",
-      "tags": ["parts-kit", "verified"],
+      "tags": [
+        "parts-kit",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 50,
       "image": "p8.jpg",
@@ -203,7 +275,10 @@
       "name": "HVAC Service Tool Kit",
       "model": "Generic Pro Kit",
       "btu": "N/A",
-      "tags": ["parts-kit", "verified"],
+      "tags": [
+        "parts-kit",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 20,
       "image": "p15.jpg",
@@ -215,7 +290,10 @@
       "name": "Commercial Freezer 200L",
       "model": "Midea Freezer 200L",
       "btu": "N/A",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 5,
       "image": null,
@@ -227,7 +305,10 @@
       "name": "Evaporative Air Cooler 60L",
       "model": "Midea Evap Cooler 60L",
       "btu": "N/A",
-      "tags": ["commercial", "verified"],
+      "tags": [
+        "commercial",
+        "verified"
+      ],
       "price": "Ask",
       "moq": 20,
       "image": null,
@@ -239,7 +320,10 @@
       "name": "A7 Duct Split AC — Ceiling Concealed Ducted",
       "model": "Midea A7 Duct",
       "btu": "N/A",
-      "tags": ["ducted", "verified"],
+      "tags": [
+        "ducted",
+        "verified"
+      ],
       "price": "$300–420",
       "moq": 5,
       "image": null,
@@ -251,10 +335,13 @@
       "name": "Multi-Split AC — 1 Outdoor to 2-3 Indoor",
       "model": "Midea Multi-Split",
       "btu": "N/A",
-      "tags": ["multi-split", "verified"],
+      "tags": [
+        "multi-split",
+        "verified"
+      ],
       "price": "$450–650",
       "moq": 5,
-      "image": null,
+      "image": "multi-split-1x3.webp",
       "specUrl": "https://www.jmideal.cn/product-multi-split-2-3-zone-vrf.html"
     },
     {
@@ -263,7 +350,10 @@
       "name": "Midea V8 VRF — ShieldBox IP55 Commercial VRF System",
       "model": "Midea V8 VRF",
       "btu": "N/A",
-      "tags": ["v8-vrf", "verified"],
+      "tags": [
+        "v8-vrf",
+        "verified"
+      ],
       "price": "$1,800–3,500",
       "moq": 2,
       "image": null,
@@ -275,7 +365,10 @@
       "name": "Midea VC Max VRF — 8th Gen Standard Series 380V",
       "model": "Midea VC Max VRF",
       "btu": "N/A",
-      "tags": ["vc-max", "verified"],
+      "tags": [
+        "vc-max",
+        "verified"
+      ],
       "price": "$1,500–3,000",
       "moq": 2,
       "image": null,

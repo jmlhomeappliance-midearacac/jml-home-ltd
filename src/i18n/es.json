@@ -11,8 +11,8 @@
     "contact": "Contacto"
   },
   "hero": {
-    "badge": "Socio autorizado Midea · Desde 1996",
-    "title": "30 años de climatización en África",
+    "badge": "Proveedor OEM / marca blanca · Respaldado por Midea y los principales fabricantes de electrodomésticos de la Greater Bay Area",
+    "title": "Más de 30 años de climatización en África",
     "titleAccent": "Del primer director de Midea en África a su socio OEM de confianza",
     "subtitle": "Midea original. MOQ desde 10 unidades. CIF a África Occidental en 25 días.",
     "ctaPrimary": "Ver los 22 modelos",
@@ -30,9 +30,9 @@
     "tagline": "Yo abrí el mercado africano de Midea. Ahora lo abro para usted.",
     "intro": "En 2001 Midea me dio un billete de ida y me dijo: descubre África. Veinticinco años después he construido una red en más de 30 países y he aprendido que en este mercado la fiabilidad supera al precio siempre.",
     "timeline": [
-      { "year": "1996–2001", "role": "Midea — Gerente de ventas de exportación", "desc": "Comencé en la división de exportación de Midea durante su primera expansión fuera de China." },
+      { "year": "1995–2000", "role": "Xinbao / Donlim — Asistente de la Presidencia", "desc": "Asistente de la Presidencia y el único comercial con inglés fluido — llevé las exportaciones del grupo de 0 a 80 millones USD." },
       { "year": "2001–2004", "role": "Midea — Primer director regional para África", "desc": "Creé el negocio africano de Midea desde cero y la primera red de distribuidores." },
-      { "year": "2005–2010", "role": "Kelon — Director general para África", "desc": "Dirigí las operaciones africanas de una segunda marca china, de Lagos a Acra y Nairobi." },
+      { "year": "2005–2010", "role": "Kelon / Hisense — Director general para África", "desc": "Dirigí las operaciones africanas de una segunda marca china, de Lagos a Acra y Nairobi." },
       { "year": "2010–hoy", "role": "Fundador, Foshan JML Electric", "desc": "Ayudo a distribuidores africanos medianos a comprar directo de fábrica sin necesidad de contenedor completo." }
     ]
   },

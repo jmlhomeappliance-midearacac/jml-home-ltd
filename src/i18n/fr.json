@@ -11,8 +11,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "badge": "Partenaire agréé Midea · Depuis 1996",
-    "title": "30 ans de froid en Afrique",
+    "badge": "Fournisseur OEM / marque blanche · Soutenu par Midea et les grands fabricants d'électroménager de la Greater Bay Area",
+    "title": "Plus de 30 ans de froid en Afrique",
     "titleAccent": "Du premier directeur Afrique de Midea à votre partenaire OEM de confiance",
     "subtitle": "Climatiseurs Midea authentiques. MOQ dès 10 unités. CIF Afrique de l'Ouest en 25 jours.",
     "ctaPrimary": "Voir les 22 modèles",
@@ -30,9 +30,9 @@
     "tagline": "J'ai ouvert le marché africain de Midea. Aujourd'hui je l'ouvre pour vous.",
     "intro": "En 2001, Midea m'a confié un billet aller simple et m'a dit : débrouille-toi en Afrique. Vingt-cinq ans plus tard, j'ai bâti un réseau dans plus de 30 pays, et j'ai appris qu'ici, la fiabilité compte plus que le prix.",
     "timeline": [
-      { "year": "1996–2001", "role": "Midea — Responsable des ventes export", "desc": "Début dans la division export de Midea lors de sa première expansion hors de Chine." },
+      { "year": "1995–2000", "role": "Xinbao / Donlim — Assistant du Président", "desc": "Assistant du Président et seul commercial parlant couramment anglais — j'ai fait passer les exportations du groupe de 0 à 80 millions USD." },
       { "year": "2001–2004", "role": "Midea — Premier directeur régional Afrique", "desc": "Création de l'activité Afrique de Midea à partir de zéro et du premier réseau de distributeurs." },
-      { "year": "2005–2010", "role": "Kelon — Directeur général Afrique", "desc": "Direction des opérations africaines d'une seconde marque chinoise, de Lagos à Accra jusqu'à Nairobi." },
+      { "year": "2005–2010", "role": "Kelon / Hisense — Directeur général Afrique", "desc": "Direction des opérations africaines d'une seconde marque chinoise, de Lagos à Accra jusqu'à Nairobi." },
       { "year": "2010–aujourd'hui", "role": "Fondateur, Foshan JML Electric", "desc": "Aider les distributeurs africains de taille moyenne à acheter directement à l'usine sans conteneur complet." }
     ]
   },
