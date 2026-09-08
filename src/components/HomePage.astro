@@ -1,0 +1,282 @@
+---
+import Base from '../layouts/Base.astro';
+import { getDict, LANGS, LANG_LABELS, normalizeLang, langPrefix } from '../i18n';
+import productData from '../data/products.json';
+import site from '../data/site.json';
+
+interface Props { lang: string }
+const { lang } = Astro.props;
+const L = normalizeLang(lang);
+const t = getDict(L);
+const products = productData.products;
+const categories = productData.categories;
+const wa = site.contact.whatsappE164;
+
+const ui = t.ui as Record<string, string>;
+const tagLabel = (tag: string) => {
+  const map: Record<string, string> = {
+    'best-seller': ui.bestSeller, verified: ui.verified, inverter: ui.inverter,
+    solar: ui.solar, portable: ui.portable, commercial: ui.commercial,
+    'high-margin': ui.highMargin, 'parts-kit': ui.partsKit, ducted: ui.ducted,
+    'multi-split': ui.multiSplit, 'v8-vrf': ui.v8Vrf, 'vc-max': ui.vcMax,
+  };
+  return map[tag] ?? tag;
+};
+const isGold = (tag: string) => ['best-seller', 'high-margin', 'solar'].includes(tag);
+const inquire = (sku: string, name: string, price: string) =>
+  `https://wa.me/${wa}?text=${encodeURIComponent(`Hello JML, I'm interested in ${sku} — ${name} (${price}). Please send a quote.`)}`;
+
+const langHref = (l: string) => `/${langPrefix(l)}`;
+const soc = site.social as Record<string, string>;
+const socialKeys = ['linkedin', 'facebook', 'whatsapp', 'tiktok', 'youtube'] as const;
+const stats = [
+  { v: '22', l: t.stats.models },
+  { v: '30', l: t.stats.years },
+  { v: '10', l: t.stats.moq },
+  { v: '25', l: t.stats.delivery },
+];
+---
+
+<Base lang={L} title={t.meta.title} description={t.meta.description}>
+
+  <nav class="nav">
+    <div class="nav-in">
+      <div class="logo">JML<span>.</span>Electric</div>
+      <div class="nav-links">
+        <a href="#story">{t.nav.story}</a>
+        <a href="#why">{t.nav.why}</a>
+        <a href="#products">{t.nav.products}</a>
+        <a href="#tools">{t.nav.tools}</a>
+        <a href="#contact">{t.nav.contact}</a>
+      </div>
+      <div class="langs">
+        {LANGS.map((l) => (
+          <a href={langHref(l)} class={l === L ? 'on' : ''} hreflang={l} lang={l}>{l.toUpperCase()}</a>
+        ))}
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="badge">{t.hero.badge}</span>
+      <h1>
+        {t.hero.title}
+        <span class="accent">{t.hero.titleAccent}</span>
+      </h1>
+      <p class="sub">{t.hero.subtitle}</p>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="#products">{t.hero.ctaPrimary}</a>
+        <a class="btn btn-ghost" href={`https://wa.me/${wa}`} target="_blank" rel="noopener">{t.hero.ctaSecondary}</a>
+      </div>
+      <div class="stats">
+        {stats.map((s) => (
+          <div class="stat"><div class="v">{s.v}</div><div class="l">{s.l}</div></div>
+        ))}
+      </div>
+    </div>
+  </header>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="kicker">{t.founder.kicker}</div>
+      <h2 class="h2">{t.founder.title}</h2>
+      <div class="founder">
+        <div class="portrait">{t.founder.title}<br />{t.founder.kicker}</div>
+        <div>
+          <p class="tagline">{t.founder.tagline}</p>
+          <p class="intro">{t.founder.intro}</p>
+          <div class="timeline">
+            {t.founder.timeline.map((it: any) => (
+              <div class="tl-item">
+                <div class="tl-year">{it.year}</div>
+                <div class="tl-role">{it.role}</div>
+                <div class="tl-desc">{it.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="alt">
+    <div class="wrap">
+      <div class="kicker">{t.why.kicker}</div>
+      <h2 class="h2">{t.why.title}</h2>
+      <div class="why-grid">
+        {t.why.items.map((it: any, i: number) => (
+          <div class="why-card">
+            <div class="n">{i + 1}</div>
+            <h3>{it.title}</h3>
+            <p>{it.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="wrap">
+      <div class="kicker">{t.products.kicker}</div>
+      <h2 class="h2">{t.products.title}</h2>
+      <p class="lede">{t.products.subtitle}</p>
+
+      <div class="filters" id="filters">
+        <button class="filter on" data-cat="all">{t.products.filterAll}</button>
+        {categories.map((c) => (
+          <button class="filter" data-cat={c.id}>{c.label}</button>
+        ))}
+      </div>
+
+      <div class="pgrid" id="pgrid">
+        {products.map((p) => (
+          <div class="pcard" data-cat={p.category}>
+            <div class="ph">
+              {p.image
+                ? <img src={`/images/${p.image}`} alt={p.name} loading="lazy" width="300" height="300" />
+                : <span class="noimg">{ui.noImage}</span>}
+            </div>
+            <div class="pb">
+              <div class="sku">{p.sku}</div>
+              <div class="nm">{p.name}</div>
+              <div class="mt">{p.btu !== 'N/A' ? p.btu : p.model}</div>
+              <div class="tags">
+                {p.tags.map((tg) => (
+                  <span class={`tag${isGold(tg) ? ' gold' : ''}`}>{tagLabel(tg)}</span>
+                ))}
+              </div>
+              <div class="price">{p.price === 'Ask' ? t.products.ask : `${t.products.fob} ${p.price}`}</div>
+              <div class="moq">{t.products.moq} {p.moq}</div>
+              <div class="pacts">
+                <a class="btn btn-sm btn-navy" href={p.specUrl} target="_blank" rel="noopener">{t.products.ctaSpec} ↗</a>
+                <a class="btn btn-sm btn-gold" href={inquire(p.sku, p.name, p.price)} target="_blank" rel="noopener">{t.products.ctaInquire}</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="banner">
+        <h3>{t.products.bannerTitle}</h3>
+        <p>{t.products.bannerDesc}</p>
+        <a class="btn btn-navy" href={site.productSite} target="_blank" rel="noopener">{t.products.bannerBtn} ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="alt">
+    <div class="wrap">
+      <div class="kicker">{t.tools.kicker}</div>
+      <h2 class="h2">{t.tools.title}</h2>
+      <p class="lede">{t.tools.subtitle}</p>
+      <div class="tools">
+        <div class="tool">
+          <h3>{t.tools.container}</h3>
+          <p>{t.tools.containerDesc}</p>
+          <a class="btn btn-navy" href={site.tools.container} target="_blank" rel="noopener">{t.tools.openTool} ↗</a>
+        </div>
+        <div class="tool">
+          <h3>{t.tools.ghana}</h3>
+          <p>{t.tools.ghanaDesc}</p>
+          <a class="btn btn-navy" href={site.tools.ghana} target="_blank" rel="noopener">{t.tools.openTool} ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="social">
+    <div class="wrap">
+      <div class="kicker">{t.social.kicker}</div>
+      <h2 class="h2">{t.social.title}</h2>
+      <p class="lede">{t.social.subtitle}</p>
+      <div class="social">
+        {socialKeys.map((k) => {
+          const p = (t.social.platforms as any)[k];
+          return (
+            <div class="soc">
+              <div class="nm">{p.name}</div>
+              <div class="ds">{p.desc}</div>
+              {soc[k]
+                ? <a href={soc[k]} target="_blank" rel="noopener">Follow ↗</a>
+                : <span class="soon">Coming soon</span>}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="kicker">Markets</div>
+      <h2 class="h2">Where we ship</h2>
+      <div class="markets">
+        {site.markets.map((m) => <span class="market">{m}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="kicker">{t.contact.kicker}</div>
+      <h2 class="h2">{t.contact.title}</h2>
+      <p class="lede">{t.contact.subtitle}</p>
+      <div class="contact">
+        <div class="cbox">
+          <div class="lb">{t.contact.whatsapp}</div>
+          <div class="vl"><a href={`https://wa.me/${wa}`} target="_blank" rel="noopener">{site.contact.whatsappDisplay}</a></div>
+        </div>
+        <div class="cbox">
+          <div class="lb">{t.contact.email}</div>
+          <div class="vl"><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></div>
+        </div>
+        <div class="cbox">
+          <div class="lb">{t.contact.ghana}</div>
+          <div class="vl">{site.contact.ghanaCity}<br /><a href={`tel:${site.contact.ghanaPhone.replace(/\s/g, '')}`}>{site.contact.ghanaPhone}</a></div>
+        </div>
+        <div class="cbox">
+          <div class="lb">{t.contact.hq}</div>
+          <div class="vl">{site.contact.hq}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap f-in">
+      <div>
+        <div class="fl">JML Electric</div>
+        <div style="margin-top:4px">{site.contact.hq} · {site.contact.email}</div>
+      </div>
+      <div style="text-align:end">
+        <div>{t.footer.tagline}</div>
+        <div style="margin-top:4px">
+          © {new Date().getFullYear()} {site.legalName}. {t.footer.rights}
+        </div>
+        <div style="margin-top:4px">
+          <a href={site.productSite} target="_blank" rel="noopener">{t.footer.productsSite}: jmideal.cn ↗</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href={`https://wa.me/${wa}`} target="_blank" rel="noopener" aria-label="WhatsApp">
+    WhatsApp {site.contact.whatsappDisplay}
+  </a>
+
+</Base>
+
+<script>
+  const filters = document.querySelectorAll<HTMLButtonElement>('.filter');
+  const cards = document.querySelectorAll<HTMLElement>('.pcard');
+  filters.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+      filters.forEach((b) => b.classList.toggle('on', b === btn));
+      cards.forEach((c) => {
+        c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none';
+      });
+    });
+  });
+</script>

@@ -1,0 +1,34 @@
+{
+  "brand": "JML Electric",
+  "legalName": "Foshan Juli Ming Electric Co., Ltd.",
+  "tagline": "Just Make your Import Easier",
+  "productSite": "https://www.jmideal.cn",
+  "brandSite": "https://www.jmlhome.ltd",
+  "contact": {
+    "whatsappE164": "8613318393556",
+    "whatsappDisplay": "+86 133 1839 3556",
+    "email": "order@jMideal.com",
+    "emailAlt": "jimmy@jmlhome.ltd",
+    "ghanaPhone": "+233 25 730 4567",
+    "ghanaEmail": "mideaacra@gmail.com",
+    "ghanaCity": "Accra · Kumasi, Ghana",
+    "hq": "Shunde, Foshan, Guangdong, China"
+  },
+  "tools": {
+    "container": "https://www.jmideal.cn/ac-buddy.html",
+    "ghana": "https://www.jmideal.cn/ac-buddy.html"
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "whatsapp": "https://wa.me/8613318393556",
+    "tiktok": "",
+    "youtube": ""
+  },
+  "markets": [
+    "Ghana", "Nigeria", "Senegal", "Côte d'Ivoire", "Mali", "Burkina Faso",
+    "Guinea", "Benin", "Togo", "Cameroon", "Kenya", "Tanzania",
+    "Angola", "Mozambique", "UAE", "Saudi Arabia"
+  ],
+  "socialNote": "Empty links are rendered as \"coming soon\" — fill them in this file when the accounts are live."
+}

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "JML Electric — 30 Years in African Cooling | Authorized Midea Partner",
+    "description": "Genuine Midea air conditioners for West Africa & Middle East distributors. MOQ from 10 units, KD semi-knocked-down export, local-currency payment, Ghana-based after-sales."
+  },
+  "nav": {
+    "story": "Our Story",
+    "why": "Why JML",
+    "products": "Products",
+    "tools": "Tools",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Authorized Midea Partner · Since 1996",
+    "title": "30 Years in African Cooling",
+    "titleAccent": "From Midea's First Africa Director to Your Trusted OEM Partner",
+    "subtitle": "Genuine Midea AC. MOQ from 10 units. CIF West Africa in 25 days.",
+    "ctaPrimary": "Browse 22 Models",
+    "ctaSecondary": "Talk to Jimmy on WhatsApp"
+  },
+  "stats": {
+    "models": "Midea models",
+    "years": "Years in African cooling",
+    "moq": "Units minimum order",
+    "delivery": "Days CIF West Africa"
+  },
+  "founder": {
+    "kicker": "The founder",
+    "title": "Jimmy Lau",
+    "tagline": "I opened Midea's Africa market. Now I open it for you.",
+    "intro": "In 2001 Midea handed me a one-way ticket and said: figure out Africa. Twenty-five years later I have built distribution in 30+ countries, and learned that in this market, reliability beats price every single time.",
+    "timeline": [
+      { "year": "1996–2001", "role": "Midea — Overseas Sales Manager", "desc": "Started in Midea's export division during the brand's first push outside China." },
+      { "year": "2001–2004", "role": "Midea — First Regional Sales Director, Africa", "desc": "Built Midea's Africa business from zero. Set up the first distributor network across West and East Africa." },
+      { "year": "2005–2010", "role": "Kelon — General Manager, Africa", "desc": "Ran a second Chinese brand's Africa operations, deepening relationships from Lagos to Accra to Nairobi." },
+      { "year": "2010–now", "role": "Founder, Foshan JML Electric", "desc": "Helping small and mid-size African distributors buy factory-direct without needing a full container." }
+    ]
+  },
+  "why": {
+    "kicker": "Why distributors choose us",
+    "title": "Six things the big exporters won't do for you",
+    "items": [
+      { "title": "MOQ from 10 units", "desc": "Most exporters want a full 40HQ container. We start at 10 units so you can test the market before you commit." },
+      { "title": "Pay in your own currency", "desc": "We settle in 30+ local currencies — GHS, NGN, XOF, and more. No scrambling for USD allocation." },
+      { "title": "KD export cuts your duty", "desc": "Semi-knocked-down shipment at 50%+ knockdown rate meaningfully lowers your import duty in most African markets." },
+      { "title": "After-sales team on the ground", "desc": "Accra and Kumasi based technicians, 24-hour response. Your customer is not left hanging." },
+      { "title": "Your own local brand", "desc": "We already launched Gold Star Plus in Ghana. We can build your private label the same way." },
+      { "title": "30 years of factory access", "desc": "Direct Midea authorization plus a quarter century of relationships. You get factory pricing, not trader pricing." }
+    ]
+  },
+  "products": {
+    "kicker": "Product range",
+    "title": "22 Midea models, factory-direct",
+    "subtitle": "Real FOB prices, no guessing. Full specifications and live calculators live on our product site.",
+    "filterAll": "All",
+    "fob": "FOB",
+    "moq": "MOQ",
+    "ask": "Ask",
+    "ctaSpec": "Full specs",
+    "ctaInquire": "Inquire",
+    "bannerTitle": "Need full technical specifications?",
+    "bannerDesc": "Our product site has every datasheet, plus live container-loading and Ghana landed-cost calculators.",
+    "bannerBtn": "See all 22 models on jmideal.cn"
+  },
+  "tools": {
+    "kicker": "Free tools",
+    "title": "Work out your numbers before you ask",
+    "subtitle": "Two calculators built from real shipping and Ghana customs data.",
+    "container": "Container Loading Calculator",
+    "containerDesc": "Mix any models, see how many fit a 20GP / 40GP / 40HQ.",
+    "ghana": "Ghana Landed Cost Calculator",
+    "ghanaDesc": "FOB + freight + 7 Ghana duty lines → your retail price in GHS.",
+    "openTool": "Open the calculator"
+  },
+  "social": {
+    "kicker": "Follow the journey",
+    "title": "Five channels, one voice",
+    "subtitle": "Market notes, container-groupbuy openings, and real install photos from across West Africa.",
+    "platforms": {
+      "linkedin": { "name": "LinkedIn", "desc": "Founder essays and B2B market analysis" },
+      "facebook": { "name": "Facebook", "desc": "Daily stock updates and dealer offers" },
+      "whatsapp": { "name": "WhatsApp Channel", "desc": "Instant alerts on price and shipping changes" },
+      "tiktok": { "name": "TikTok & Instagram", "desc": "Install videos and warehouse walkthroughs" },
+      "youtube": { "name": "YouTube", "desc": "Product demos and dealer interviews" }
+    }
+  },
+  "contact": {
+    "kicker": "Get in touch",
+    "title": "Tell us what you need",
+    "subtitle": "Send a WhatsApp message with your model and quantity. We reply within one business day.",
+    "whatsapp": "WhatsApp (24/7)",
+    "email": "Email",
+    "ghana": "Ghana office",
+    "hq": "Headquarters"
+  },
+  "footer": {
+    "tagline": "Just Make your Import Easier",
+    "rights": "All rights reserved.",
+    "productsSite": "Product site",
+    "brandSite": "Brand site"
+  },
+  "ui": {
+    "bestSeller": "Best seller",
+    "verified": "Verified",
+    "inverter": "Inverter",
+    "solar": "Solar",
+    "portable": "Portable",
+    "commercial": "Commercial",
+    "highMargin": "High margin",
+    "partsKit": "Parts kit",
+    "ducted": "Ducted",
+    "multiSplit": "Multi-split",
+    "v8Vrf": "V8 VRF",
+    "vcMax": "VC Max",
+    "noImage": "Photo coming soon"
+  }
+}

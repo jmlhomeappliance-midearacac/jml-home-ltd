@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "JML Electric — 30 años de climatización en África | Socio autorizado Midea",
+    "description": "Aires acondicionados Midea originales para distribuidores de África Occidental y Oriente Medio. MOQ desde 10 unidades, exportación KD, pago en moneda local, posventa en Ghana."
+  },
+  "nav": {
+    "story": "Nuestra historia",
+    "why": "Por qué JML",
+    "products": "Productos",
+    "tools": "Herramientas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Socio autorizado Midea · Desde 1996",
+    "title": "30 años de climatización en África",
+    "titleAccent": "Del primer director de Midea en África a su socio OEM de confianza",
+    "subtitle": "Midea original. MOQ desde 10 unidades. CIF a África Occidental en 25 días.",
+    "ctaPrimary": "Ver los 22 modelos",
+    "ctaSecondary": "Hablar con Jimmy por WhatsApp"
+  },
+  "stats": {
+    "models": "Modelos Midea",
+    "years": "Años en climatización africana",
+    "moq": "Unidades de pedido mínimo",
+    "delivery": "Días CIF a África Occidental"
+  },
+  "founder": {
+    "kicker": "El fundador",
+    "title": "Jimmy Lau",
+    "tagline": "Yo abrí el mercado africano de Midea. Ahora lo abro para usted.",
+    "intro": "En 2001 Midea me dio un billete de ida y me dijo: descubre África. Veinticinco años después he construido una red en más de 30 países y he aprendido que en este mercado la fiabilidad supera al precio siempre.",
+    "timeline": [
+      { "year": "1996–2001", "role": "Midea — Gerente de ventas de exportación", "desc": "Comencé en la división de exportación de Midea durante su primera expansión fuera de China." },
+      { "year": "2001–2004", "role": "Midea — Primer director regional para África", "desc": "Creé el negocio africano de Midea desde cero y la primera red de distribuidores." },
+      { "year": "2005–2010", "role": "Kelon — Director general para África", "desc": "Dirigí las operaciones africanas de una segunda marca china, de Lagos a Acra y Nairobi." },
+      { "year": "2010–hoy", "role": "Fundador, Foshan JML Electric", "desc": "Ayudo a distribuidores africanos medianos a comprar directo de fábrica sin necesidad de contenedor completo." }
+    ]
+  },
+  "why": {
+    "kicker": "Por qué nos eligen los distribuidores",
+    "title": "Seis cosas que los grandes exportadores no harán por usted",
+    "items": [
+      { "title": "MOQ desde 10 unidades", "desc": "La mayoría exige un contenedor 40HQ completo. Nosotros empezamos en 10 unidades para probar el mercado." },
+      { "title": "Pague en su moneda", "desc": "Trabajamos con más de 30 monedas locales — GHS, NGN, XOF y más. Sin perseguir cupos de dólares." },
+      { "title": "La exportación KD reduce sus aranceles", "desc": "El envío semidesmontado por encima del 50 % reduce de forma apreciable sus derechos de importación." },
+      { "title": "Posventa sobre el terreno", "desc": "Técnicos en Acra y Kumasi, respuesta en 24 horas. Su cliente nunca queda abandonado." },
+      { "title": "Su propia marca local", "desc": "Ya lanzamos Gold Star Plus en Ghana. Podemos crear su marca privada igual." },
+      { "title": "30 años de acceso a fábrica", "desc": "Autorización directa de Midea y un cuarto de siglo de relaciones. Precio de fábrica, no de intermediario." }
+    ]
+  },
+  "products": {
+    "kicker": "Gama de productos",
+    "title": "22 modelos Midea, directo de fábrica",
+    "subtitle": "Precios FOB reales, sin estimaciones. Fichas técnicas y calculadoras en vivo en nuestro sitio de producto.",
+    "filterAll": "Todos",
+    "fob": "FOB",
+    "moq": "MOQ",
+    "ask": "Consultar",
+    "ctaSpec": "Ficha completa",
+    "ctaInquire": "Consultar",
+    "bannerTitle": "¿Necesita las especificaciones técnicas completas?",
+    "bannerDesc": "Nuestro sitio de producto tiene todas las fichas, más las calculadoras de carga de contenedor y de costo en destino a Ghana.",
+    "bannerBtn": "Ver los 22 modelos en jmideal.cn"
+  },
+  "tools": {
+    "kicker": "Herramientas gratuitas",
+    "title": "Calcule sus números antes de preguntar",
+    "subtitle": "Dos calculadoras construidas con datos reales de flete y aduanas de Ghana.",
+    "container": "Calculadora de carga de contenedor",
+    "containerDesc": "Combine modelos y vea cuántos caben en 20GP / 40GP / 40HQ.",
+    "ghana": "Calculadora de costo en destino a Ghana",
+    "ghanaDesc": "FOB + flete + 7 partidas arancelarias de Ghana → su precio de venta en GHS.",
+    "openTool": "Abrir la calculadora"
+  },
+  "social": {
+    "kicker": "Siga el camino",
+    "title": "Cinco canales, una sola voz",
+    "subtitle": "Notas de mercado, aperturas de compra conjunta y fotos reales de instalación en África Occidental.",
+    "platforms": {
+      "linkedin": { "name": "LinkedIn", "desc": "Ensayos del fundador y análisis B2B" },
+      "facebook": { "name": "Facebook", "desc": "Stock diario y ofertas para distribuidores" },
+      "whatsapp": { "name": "Canal de WhatsApp", "desc": "Alertas instantáneas de precio y flete" },
+      "tiktok": { "name": "TikTok e Instagram", "desc": "Vídeos de instalación y visitas al almacén" },
+      "youtube": { "name": "YouTube", "desc": "Demostraciones y entrevistas" }
+    }
+  },
+  "contact": {
+    "kicker": "Contacte con nosotros",
+    "title": "Díganos qué necesita",
+    "subtitle": "Envíe un WhatsApp con el modelo y la cantidad. Respondemos en un día laborable.",
+    "whatsapp": "WhatsApp (24/7)",
+    "email": "Correo",
+    "ghana": "Oficina en Ghana",
+    "hq": "Sede central"
+  },
+  "footer": {
+    "tagline": "Just Make your Import Easier",
+    "rights": "Todos los derechos reservados.",
+    "productsSite": "Sitio de producto",
+    "brandSite": "Sitio de marca"
+  },
+  "ui": {
+    "bestSeller": "Más vendido",
+    "verified": "Verificado",
+    "inverter": "Inverter",
+    "solar": "Solar",
+    "portable": "Portátil",
+    "commercial": "Comercial",
+    "highMargin": "Margen alto",
+    "partsKit": "Kit de repuestos",
+    "ducted": "Conductos",
+    "multiSplit": "Multi-split",
+    "v8Vrf": "V8 VRF",
+    "vcMax": "VC Max",
+    "noImage": "Foto próximamente"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "JML Electric — 30 anos em climatização africana | Parceiro autorizado Midea",
+    "description": "Ares condicionados Midea originais para distribuidores da África Ocidental e do Médio Oriente. MOQ desde 10 unidades, exportação KD, pagamento em moeda local, pós-venda no Gana."
+  },
+  "nav": {
+    "story": "A nossa história",
+    "why": "Porquê a JML",
+    "products": "Produtos",
+    "tools": "Ferramentas",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Parceiro autorizado Midea · Desde 1996",
+    "title": "30 anos em climatização africana",
+    "titleAccent": "Do primeiro diretor da Midea para África ao seu parceiro OEM de confiança",
+    "subtitle": "Midea original. MOQ desde 10 unidades. CIF para a África Ocidental em 25 dias.",
+    "ctaPrimary": "Ver os 22 modelos",
+    "ctaSecondary": "Falar com o Jimmy no WhatsApp"
+  },
+  "stats": {
+    "models": "Modelos Midea",
+    "years": "Anos em climatização africana",
+    "moq": "Unidades de encomenda mínima",
+    "delivery": "Dias CIF para a África Ocidental"
+  },
+  "founder": {
+    "kicker": "O fundador",
+    "title": "Jimmy Lau",
+    "tagline": "Eu abri o mercado africano da Midea. Agora abro-o para si.",
+    "intro": "Em 2001 a Midea deu-me um bilhete de ida e disse: descobre África. Vinte e cinco anos depois construí uma rede em mais de 30 países e aprendi que neste mercado a fiabilidade vence o preço sempre.",
+    "timeline": [
+      { "year": "1996–2001", "role": "Midea — Gestor de vendas de exportação", "desc": "Comecei na divisão de exportação da Midea durante a primeira expansão da marca fora da China." },
+      { "year": "2001–2004", "role": "Midea — Primeiro diretor regional para África", "desc": "Criei o negócio africano da Midea do zero e a primeira rede de distribuidores." },
+      { "year": "2005–2010", "role": "Kelon — Diretor-geral para África", "desc": "Dirigi as operações africanas de uma segunda marca chinesa, de Lagos a Acra e Nairóbi." },
+      { "year": "2010–presente", "role": "Fundador, Foshan JML Electric", "desc": "Ajudo distribuidores africanos de média dimensão a comprar direto da fábrica sem contentor completo." }
+    ]
+  },
+  "why": {
+    "kicker": "Porque nos escolhem os distribuidores",
+    "title": "Seis coisas que os grandes exportadores não farão por si",
+    "items": [
+      { "title": "MOQ desde 10 unidades", "desc": "A maioria exige um contentor 40HQ completo. Nós começamos em 10 unidades para testar o mercado." },
+      { "title": "Pague na sua moeda", "desc": "Trabalhamos com mais de 30 moedas locais — GHS, NGN, XOF e outras. Sem correr atrás de divisas." },
+      { "title": "A exportação KD reduz os seus direitos", "desc": "O envio semidesmontado acima de 50 % reduz de forma apreciável os seus direitos de importação." },
+      { "title": "Pós-venda no terreno", "desc": "Técnicos em Acra e Kumasi, resposta em 24 horas. O seu cliente nunca fica sem apoio." },
+      { "title": "A sua própria marca local", "desc": "Já lançámos a Gold Star Plus no Gana. Podemos criar a sua marca própria da mesma forma." },
+      { "title": "30 anos de acesso à fábrica", "desc": "Autorização direta da Midea e um quarto de século de relações. Preço de fábrica, não de intermediário." }
+    ]
+  },
+  "products": {
+    "kicker": "Gama de produtos",
+    "title": "22 modelos Midea, direto da fábrica",
+    "subtitle": "Preços FOB reais, sem estimativas. Fichas técnicas e calculadoras em direto no nosso site de produto.",
+    "filterAll": "Todos",
+    "fob": "FOB",
+    "moq": "MOQ",
+    "ask": "Consultar",
+    "ctaSpec": "Ficha completa",
+    "ctaInquire": "Consultar",
+    "bannerTitle": "Precisa das especificações técnicas completas?",
+    "bannerDesc": "O nosso site de produto tem todas as fichas, além das calculadoras de carregamento de contentor e de custo no destino no Gana.",
+    "bannerBtn": "Ver os 22 modelos em jmideal.cn"
+  },
+  "tools": {
+    "kicker": "Ferramentas gratuitas",
+    "title": "Calcule os seus números antes de perguntar",
+    "subtitle": "Duas calculadoras construídas com dados reais de frete e alfândega do Gana.",
+    "container": "Calculadora de carregamento de contentor",
+    "containerDesc": "Combine modelos e veja quantos cabem em 20GP / 40GP / 40HQ.",
+    "ghana": "Calculadora de custo no destino no Gana",
+    "ghanaDesc": "FOB + frete + 7 linhas aduaneiras do Gana → o seu preço de venda em GHS.",
+    "openTool": "Abrir a calculadora"
+  },
+  "social": {
+    "kicker": "Siga o percurso",
+    "title": "Cinco canais, uma só voz",
+    "subtitle": "Notas de mercado, aberturas de compra conjunta e fotos reais de instalação na África Ocidental.",
+    "platforms": {
+      "linkedin": { "name": "LinkedIn", "desc": "Ensaios do fundador e análise B2B" },
+      "facebook": { "name": "Facebook", "desc": "Stock diário e ofertas para distribuidores" },
+      "whatsapp": { "name": "Canal WhatsApp", "desc": "Alertas instantâneos de preço e frete" },
+      "tiktok": { "name": "TikTok e Instagram", "desc": "Vídeos de instalação e visitas ao armazém" },
+      "youtube": { "name": "YouTube", "desc": "Demonstrações e entrevistas" }
+    }
+  },
+  "contact": {
+    "kicker": "Fale connosco",
+    "title": "Diga-nos o que precisa",
+    "subtitle": "Envie uma mensagem WhatsApp com o modelo e a quantidade. Respondemos num dia útil.",
+    "whatsapp": "WhatsApp (24/7)",
+    "email": "E-mail",
+    "ghana": "Escritório no Gana",
+    "hq": "Sede"
+  },
+  "footer": {
+    "tagline": "Just Make your Import Easier",
+    "rights": "Todos os direitos reservados.",
+    "productsSite": "Site de produto",
+    "brandSite": "Site da marca"
+  },
+  "ui": {
+    "bestSeller": "Mais vendido",
+    "verified": "Verificado",
+    "inverter": "Inverter",
+    "solar": "Solar",
+    "portable": "Portátil",
+    "commercial": "Comercial",
+    "highMargin": "Margem alta",
+    "partsKit": "Kit de peças",
+    "ducted": "Condutas",
+    "multiSplit": "Multi-split",
+    "v8Vrf": "V8 VRF",
+    "vcMax": "VC Max",
+    "noImage": "Foto brevemente"
+  }
+}

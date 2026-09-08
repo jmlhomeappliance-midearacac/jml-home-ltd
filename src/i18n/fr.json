@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "title": "JML Electric — 30 ans de froid en Afrique | Partenaire agréé Midea",
+    "description": "Climatiseurs Midea authentiques pour les distributeurs d'Afrique de l'Ouest et du Moyen-Orient. MOQ dès 10 unités, export en KD, paiement en devise locale, service après-vente basé au Ghana."
+  },
+  "nav": {
+    "story": "Notre histoire",
+    "why": "Pourquoi JML",
+    "products": "Produits",
+    "tools": "Outils",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Partenaire agréé Midea · Depuis 1996",
+    "title": "30 ans de froid en Afrique",
+    "titleAccent": "Du premier directeur Afrique de Midea à votre partenaire OEM de confiance",
+    "subtitle": "Climatiseurs Midea authentiques. MOQ dès 10 unités. CIF Afrique de l'Ouest en 25 jours.",
+    "ctaPrimary": "Voir les 22 modèles",
+    "ctaSecondary": "Parler à Jimmy sur WhatsApp"
+  },
+  "stats": {
+    "models": "Modèles Midea",
+    "years": "Ans de froid en Afrique",
+    "moq": "Unités minimum de commande",
+    "delivery": "Jours CIF Afrique de l'Ouest"
+  },
+  "founder": {
+    "kicker": "Le fondateur",
+    "title": "Jimmy Lau",
+    "tagline": "J'ai ouvert le marché africain de Midea. Aujourd'hui je l'ouvre pour vous.",
+    "intro": "En 2001, Midea m'a confié un billet aller simple et m'a dit : débrouille-toi en Afrique. Vingt-cinq ans plus tard, j'ai bâti un réseau dans plus de 30 pays, et j'ai appris qu'ici, la fiabilité compte plus que le prix.",
+    "timeline": [
+      { "year": "1996–2001", "role": "Midea — Responsable des ventes export", "desc": "Début dans la division export de Midea lors de sa première expansion hors de Chine." },
+      { "year": "2001–2004", "role": "Midea — Premier directeur régional Afrique", "desc": "Création de l'activité Afrique de Midea à partir de zéro et du premier réseau de distributeurs." },
+      { "year": "2005–2010", "role": "Kelon — Directeur général Afrique", "desc": "Direction des opérations africaines d'une seconde marque chinoise, de Lagos à Accra jusqu'à Nairobi." },
+      { "year": "2010–aujourd'hui", "role": "Fondateur, Foshan JML Electric", "desc": "Aider les distributeurs africains de taille moyenne à acheter directement à l'usine sans conteneur complet." }
+    ]
+  },
+  "why": {
+    "kicker": "Pourquoi les distributeurs nous choisissent",
+    "title": "Six choses que les gros exportateurs ne feront pas pour vous",
+    "items": [
+      { "title": "MOQ dès 10 unités", "desc": "La plupart des exportateurs exigent un conteneur 40HQ complet. Nous démarrons à 10 unités pour tester le marché." },
+      { "title": "Payez dans votre devise", "desc": "Nous réglons en plus de 30 devises locales — GHS, NGN, XOF et autres. Fini la course aux devises." },
+      { "title": "L'export KD réduit vos droits", "desc": "Expédition en semi-démonté à plus de 50 % réduit sensiblement vos droits de douane dans la plupart des marchés." },
+      { "title": "Service après-vente sur place", "desc": "Techniciens basés à Accra et Kumasi, réponse sous 24 heures. Votre client n'est jamais laissé sans solution." },
+      { "title": "Votre propre marque locale", "desc": "Nous avons déjà lancé Gold Star Plus au Ghana. Nous pouvons créer votre marque de la même façon." },
+      { "title": "30 ans d'accès usine", "desc": "Autorisation directe Midea et un quart de siècle de relations. Prix usine, pas prix d'intermédiaire." }
+    ]
+  },
+  "products": {
+    "kicker": "Gamme de produits",
+    "title": "22 modèles Midea, direct usine",
+    "subtitle": "Prix FOB réels, sans approximation. Fiches techniques et calculateurs en direct sur notre site produit.",
+    "filterAll": "Tous",
+    "fob": "FOB",
+    "moq": "MOQ",
+    "ask": "Sur demande",
+    "ctaSpec": "Fiche complète",
+    "ctaInquire": "Demander",
+    "bannerTitle": "Besoin des spécifications techniques complètes ?",
+    "bannerDesc": "Notre site produit contient toutes les fiches, plus les calculateurs de chargement conteneur et de coût de revient Ghana.",
+    "bannerBtn": "Voir les 22 modèles sur jmideal.cn"
+  },
+  "tools": {
+    "kicker": "Outils gratuits",
+    "title": "Calculez vos chiffres avant de demander",
+    "subtitle": "Deux calculateurs construits à partir de données réelles de fret et de douane ghanéenne.",
+    "container": "Calculateur de chargement conteneur",
+    "containerDesc": "Mélangez les modèles, voyez combien tiennent en 20GP / 40GP / 40HQ.",
+    "ghana": "Calculateur de coût de revient Ghana",
+    "ghanaDesc": "FOB + fret + 7 lignes de droits ghanéens → votre prix de vente en GHS.",
+    "openTool": "Ouvrir le calculateur"
+  },
+  "social": {
+    "kicker": "Suivez l'aventure",
+    "title": "Cinq canaux, une seule voix",
+    "subtitle": "Notes de marché, ouvertures d'achats groupés et photos réelles d'installation en Afrique de l'Ouest.",
+    "platforms": {
+      "linkedin": { "name": "LinkedIn", "desc": "Analyses de marché et écrits du fondateur" },
+      "facebook": { "name": "Facebook", "desc": "Stock quotidien et offres distributeurs" },
+      "whatsapp": { "name": "Chaîne WhatsApp", "desc": "Alertes instantanées sur prix et fret" },
+      "tiktok": { "name": "TikTok & Instagram", "desc": "Vidéos d'installation et visites d'entrepôt" },
+      "youtube": { "name": "YouTube", "desc": "Démonstrations produits et interviews" }
+    }
+  },
+  "contact": {
+    "kicker": "Contactez-nous",
+    "title": "Dites-nous ce qu'il vous faut",
+    "subtitle": "Envoyez un message WhatsApp avec le modèle et la quantité. Réponse sous un jour ouvré.",
+    "whatsapp": "WhatsApp (24/7)",
+    "email": "E-mail",
+    "ghana": "Bureau du Ghana",
+    "hq": "Siège"
+  },
+  "footer": {
+    "tagline": "Just Make your Import Easier",
+    "rights": "Tous droits réservés.",
+    "productsSite": "Site produit",
+    "brandSite": "Site de marque"
+  },
+  "ui": {
+    "bestSeller": "Meilleure vente",
+    "verified": "Vérifié",
+    "inverter": "Inverter",
+    "solar": "Solaire",
+    "portable": "Portable",
+    "commercial": "Commercial",
+    "highMargin": "Forte marge",
+    "partsKit": "Kit pièces",
+    "ducted": "Gainable",
+    "multiSplit": "Multi-split",
+    "v8Vrf": "V8 VRF",
+    "vcMax": "VC Max",
+    "noImage": "Photo bientôt disponible"
+  }
+}
