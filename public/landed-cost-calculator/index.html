@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" data-page-node-id="CF3WHaXhGxFSbafd57UExS">
+<head data-page-node-id="LcB4Zghk5HLf8zAJ4TN3Lq">
+<meta charset="UTF-8" data-page-node-id="LEGxPXnCocbuhsL0P4ri7f">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="84mQ4qojb5QAyeGPHw51A3">
+<title>Africa AC Landed Cost Calculator — Nigeria, Ghana, Kenya, Senegal & more | JML</title>
+<meta name="description" content="Free landed cost calculator for Midea air conditioners into Nigeria, Ghana, Kenya, Senegal, Cote d'Ivoire, Mali, Benin, Togo and Burkina Faso. Import duty, VAT, port fees, retail price in local currency." data-page-node-id="oKXz0UX7kTTYLRxzoqtHhR">
+<link rel="canonical" href="https://www.jmideal.cn/landed-cost-calculator.html" data-page-node-id="qFg2FEYDNFp7h6I2qstJN0">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    background: linear-gradient(135deg, #003B70 0%, #0058A3 60%, #0072C6 100%);
+    min-height: 100vh; padding: 24px 16px; color: #1A1A1A;
+  }
+  .card { max-width: 940px; margin: 0 auto; background: #fff; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); overflow: hidden; }
+  .head { background: linear-gradient(135deg, #003B70, #0058A3); color: #fff; padding: 26px 32px; }
+  .head .tag { display:inline-block; background: rgba(201,168,106,0.25); color:#C9A86A; padding:4px 12px; border-radius:14px; font-size:11px; letter-spacing:1.5px; margin-bottom:12px; border:1px solid rgba(201,168,106,0.4); }
+  .head h1 { font-size: 25px; font-weight: 800; margin-bottom: 6px; }
+  .head p { color: rgba(255,255,255,0.85); font-size: 13px; }
+  .body { padding: 26px 32px 32px; }
+
+  .country-bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+  .cbtn { border:1.5px solid #E0E0E0; background:#FAFAF7; border-radius:20px; padding:8px 14px; font-size:13px; font-weight:600; cursor:pointer; color:#444; transition:all .18s; }
+  .cbtn:hover { border-color:#0058A3; color:#0058A3; }
+  .cbtn.on { background:#003B70; border-color:#003B70; color:#fff; }
+
+  .grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:14px; margin-bottom:16px; }
+  label { display:block; font-size:11px; font-weight:600; color:#555; margin-bottom:5px; text-transform:uppercase; letter-spacing:0.5px; }
+  select, input { width:100%; padding:10px 12px; border:1.5px solid #E0E0E0; border-radius:8px; font-size:14px; background:#FAFAF7; transition:all .2s; }
+  select:focus, input:focus { outline:none; border-color:#0058A3; background:#fff; box-shadow:0 0 0 3px rgba(0,88,163,0.1); }
+
+  .chk { display:flex; align-items:center; gap:8px; font-size:13px; color:#444; margin-bottom:16px; }
+  .chk input { width:16px; height:16px; }
+
+  .btn { width:100%; background: linear-gradient(135deg,#C9A86A,#A07C3D); color:#fff; border:0; padding:14px; font-size:15px; font-weight:700; border-radius:8px; cursor:pointer; letter-spacing:0.5px; transition:all .2s; }
+  .btn:hover { transform:translateY(-1px); box-shadow:0 8px 20px rgba(201,168,106,0.4); }
+
+  .result { margin-top:22px; background:linear-gradient(135deg,#FFF8E8,#FFFFFF); border:1.5px solid #E8D9A8; border-radius:12px; padding:22px; display:none; }
+  .result.show { display:block; }
+  .result h3 { color:#A07C3D; font-size:16px; margin-bottom:12px; border-bottom:1px solid #E8D9A8; padding-bottom:9px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td { padding:7px 0; border-bottom:1px dashed #E8D9A8; }
+  td:last-child { text-align:right; font-weight:600; color:#003B70; white-space:nowrap; }
+  tr:last-child td { border-bottom:0; }
+  tr.total td { font-size:15px; font-weight:800; color:#C9482B; padding-top:11px; border-top:2px solid #C9A86A; }
+  tr.retail td { font-size:17px; font-weight:800; color:#003B70; padding-top:12px; }
+  .multiplier { display:inline-block; background:#003B70; color:#fff; padding:3px 10px; border-radius:14px; font-size:11px; font-weight:700; margin-left:7px; }
+
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px; }
+  .box { background:#fff; border:1px solid #E8D9A8; border-radius:8px; padding:14px; font-size:12px; }
+  .box h4 { font-size:11.5px; color:#A07C3D; margin-bottom:8px; text-transform:uppercase; letter-spacing:1px; }
+  .box table td { padding:4px 0; border:0; }
+  .ts { color:#777; font-weight:400; }
+  .tv { color:#003B70; }
+  .note-list { margin:0; padding-left:16px; color:#555; line-height:1.7; }
+  .note-list li { margin-bottom:4px; }
+
+  .wa-cta { margin-top:20px; background:#25D366; color:#fff; text-decoration:none; padding:14px 24px; border-radius:8px; display:flex; align-items:center; justify-content:center; gap:10px; font-size:14px; font-weight:700; transition:all .2s; }
+  .wa-cta:hover { background:#20BD5A; transform:translateY(-1px); }
+  .ob { margin-top:18px; border:1px solid #E8D9A8; border-radius:12px; background:#FFFDF6; padding:16px 18px; }
+  .ob h4 { font-size:14px; margin:0 0 4px; color:#003B70; }
+  .ob .sub { font-size:12px; color:#777; margin-bottom:12px; line-height:1.6; }
+  .ob-actions { display:flex; gap:10px; flex-wrap:wrap; }
+  .btn { flex:1 1 auto; min-width:140px; text-align:center; text-decoration:none; padding:12px 14px; border-radius:8px; font-size:13px; font-weight:700; cursor:pointer; border:0; font-family:inherit; }
+  .btn-wa { background:#25D366; color:#fff; }
+  .btn-wa:hover { background:#20BD5A; }
+  .btn-navy { background:#003B70; color:#fff; }
+  .btn-ghost { background:#fff; color:#003B70; border:2px solid #003B70; }
+  .ob-form { display:none; margin-top:14px; border-top:1px dashed #E8D9A8; padding-top:14px; }
+  .ob-form.show { display:block; }
+  .f2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .ob-form label { font-size:11px; color:#666; display:block; margin-bottom:4px; }
+  .ob-form input, .ob-form textarea { width:100%; padding:9px 10px; border:1px solid #DDD; border-radius:7px; font-size:13px; font-family:inherit; }
+  .ob-form textarea { min-height:56px; resize:vertical; }
+  .req { color:#C0392B; }
+  .print-only { display:none; }
+  @media print {
+    body { background:#fff; padding:0; }
+    .topnav, .navcard, .ob, .wa-cta, .country-bar { display:none !important; }
+    .card { box-shadow:none; border-radius:0; max-width:100%; }
+    .print-only { display:block; margin-top:14px; padding:12px 32px 24px; font-size:11px; color:#555; line-height:1.7; }
+  }
+  @media (max-width:720px){ .f2{grid-template-columns:1fr;} }
+  .back { text-align:center; margin-top:18px; font-size:12px; }
+  .back a { color:#0058A3; text-decoration:none; }
+  .topnav { position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:14px;
+            max-width:940px; margin:0 auto 14px; background:rgba(0,40,75,.92);
+            border:1px solid rgba(201,168,106,.35); border-radius:12px; padding:10px 16px; font-size:13px; }
+  .topnav a { color:#C9A86A; text-decoration:none; font-weight:600; white-space:nowrap; }
+  .topnav a:hover { color:#fff; }
+  .topnav .sp { flex:1; }
+  .topnav .home { background:rgba(201,168,106,.18); padding:6px 13px; border-radius:8px; }
+  .navcard { max-width:940px; margin:16px auto 0; background:#fff; border-radius:14px; padding:18px 20px;
+             text-align:center; box-shadow:0 14px 40px rgba(0,0,0,.2); }
+  .navcard a { display:inline-block; margin:6px 10px; color:#0058A3; text-decoration:none; font-size:13px; font-weight:600; }
+  .navcard a:hover { text-decoration:underline; }
+  .navcard .hint { color:#888; font-size:11px; margin-bottom:8px; }
+  @media (max-width:720px){ .topnav{ gap:8px; padding:8px 10px; font-size:11.5px; } }
+  .note { margin-top:16px; font-size:11px; color:#888; line-height:1.65; }
+  @media (max-width:720px){ .grid{grid-template-columns:1fr 1fr;} .two{grid-template-columns:1fr;} .body{padding:20px;} .head{padding:22px;} }
+</style>
+</head>
+<body data-page-node-id="HqXXSynbAtqDwBCrh7U3eF">
+
+<nav class="topnav">
+  <a class="home" href="/">← JML Home</a>
+  <span class="sp"></span>
+  <a href="https://www.jmideal.cn/ac-buddy.html">Container Calculator ↗</a>
+  <a href="https://wa.me/8613318393556">WhatsApp</a>
+</nav>
+
+<div class="card" data-page-node-id="h7LJycIoPiiHYb4acCbD6p">
+  <div class="head" data-page-node-id="ICYjzo4ZXrTvsIDlugv1XL">
+    <span class="tag" data-page-node-id="3BN7jvOhz1lKRWfe5XAZJ8">JML · LANDED COST CALCULATOR</span>
+    <h1 data-page-node-id="GreW0mg6qVZLkmMkwZeObS">Africa AC Landed Cost Calculator</h1>
+    <p data-page-node-id="cALBxYLNtHyceXbAPhSLhK">Pick a country — the full import duty ladder, VAT, port fees and retail price in local currency, calculated instantly.</p>
+  </div>
+  <div class="body" data-page-node-id="gR3BRWGCUZyI10UxamqzXe">
+
+    <div class="country-bar" id="cbar" data-page-node-id="hNhnQavzo6IlAcgTS1PkaO"></div>
+
+    <div class="grid" data-page-node-id="QTdxqIx48ScTAZdsa2wimJ">
+      <div data-page-node-id="xkzLDtPMjzSn97HNYfYk5M">
+        <label data-page-node-id="pj2uXyFNSOzog2gEVE7njb">AC Model (BTU)</label>
+        <select id="btu" data-page-node-id="qx0gaqb7rMRMDNXfdLPqKN">
+          <option value="9000" data-page-node-id="GrqbHI308kF49I5RCOa2I1">1HP — 9,000 BTU</option>
+          <option value="12000" selected data-page-node-id="k4NhjQhCQQUoTTlUlVA0s6">1.5HP — 12,000 BTU</option>
+          <option value="18000" data-page-node-id="HWeKW3xRs2idXBtBjPdfhA">2HP — 18,000 BTU</option>
+          <option value="24000" data-page-node-id="tKbRRok5t7KSrrGy93LI0g">2.5HP — 24,000 BTU</option>
+        </select>
+      </div>
+      <div data-page-node-id="7nn4F8hvesC2lYTwJO07a1">
+        <label data-page-node-id="KrU9Kh4GeirAYSxIfxPYni">FOB Price (USD/unit)</label>
+        <input type="number" id="fob" value="165" step="1" data-page-node-id="A0xpamD9eJctCOHEVaA62s">
+      </div>
+      <div data-page-node-id="XHwgHNSBOuxMbNKUbicCm4">
+        <label data-page-node-id="vtAd3UntOvdUkLgjjiLhfF">Quantity (units)</label>
+        <input type="number" id="qty" value="120" step="10" data-page-node-id="vqJHEUH5v5cxsXMWJKdeTi">
+      </div>
+      <div data-page-node-id="kHoYrXeQ1N5qEdBfNkqBpn">
+        <label data-page-node-id="xW1pZAkZ7Ck1zN0Q22sfT6">Ocean Freight (USD/unit)</label>
+        <input type="number" id="freight" value="18" step="1" data-page-node-id="8kfZe3fwSjr0R0d6LCKk19">
+      </div>
+      <div data-page-node-id="diChWy9X5V7IErGQFFsshL">
+        <label data-page-node-id="F61K3lR8y0Ka4O2SfRVm43">Insurance (% of FOB+Freight)</label>
+        <input type="number" id="insPct" value="1.5" step="0.1" data-page-node-id="IohremG7CB2sfpbWI2IfOA">
+      </div>
+      <div data-page-node-id="48CgzeCXSA1gCArUvMNYjC">
+        <label data-page-node-id="S3PBplG5iRXPH8PiGuyCdC">Import Duty (%)</label>
+        <input type="number" id="dutyPct" value="20" step="0.5" data-page-node-id="XqSKERyNs26yhFRPkeYcFc">
+      </div>
+      <div data-page-node-id="THEZjWxhnBH9gBqIcGAbSg">
+        <label data-page-node-id="CUJRGT15HgLXzYpMpp6ATw">Port &amp; Clearing (USD/unit)</label>
+        <input type="number" id="port" value="14" step="1" data-page-node-id="GOIn0riMuOHerrhmXDFHr4">
+      </div>
+      <div data-page-node-id="NCLvEdeMbn67xCEEewcQpu">
+        <label data-page-node-id="yy98l3jU2u7oVi5xYmUddY">Inland Transport (USD/unit)</label>
+        <input type="number" id="inland" value="6" step="1" data-page-node-id="4xS1zNlb95jILM7fWd87lJ">
+      </div>
+      <div data-page-node-id="x5huIDru1HYXz2OP0PwMEF">
+        <label data-page-node-id="XPukC2euPqlDdJHsBmEkEE">Dealer Markup (%)</label>
+        <input type="number" id="markup" value="30" step="1" data-page-node-id="yOGpAqwkV8HoZOe6yQLIrQ">
+      </div>
+      <div data-page-node-id="7jnzaZfEbtxca6FcRqbgZH">
+        <label id="fxLabel" data-page-node-id="P0Ftjl5wjOHxgcDPYSAQpH">USD → NGN Rate</label>
+        <input type="number" id="rate" value="1550" step="1" data-page-node-id="S4V6edvC7gmPgCBV0y1wu4">
+      </div>
+      <div data-page-node-id="MnopfGHWJuTR80ZcwO2v0U">
+        <label data-page-node-id="hCGzpBvA0R7VMH9HFYQVUY">Shipment Compliance Fee (USD)</label>
+        <input type="number" id="compliance" value="850" step="50" data-page-node-id="nGqx7mJ2KSz9syOIkPR9rP">
+      </div>
+    </div>
+
+    <label class="chk" data-page-node-id="tuayEw0Pfu2i1f5kZfPvxZ"><input type="checkbox" id="fcs" checked data-page-node-id="sBCD2WxWDGIxotZHOBPuem"> Include 4% FOB Import Levy (Nigeria FCS — verify current status)</label>
+
+    <button class="btn" onclick="calculate()" data-page-node-id="u5cB2cEOlp3SAezGk4eWQ2">⚡ Calculate Landed Cost</button>
+
+    <div class="result" id="result" data-page-node-id="HvdbbtcREPKhFsLTlnr0If">
+      <h3 id="r_title" data-page-node-id="PtqiJApzPdXBC62tK5j1DE">📊 Landed Cost Breakdown</h3>
+      <table data-page-node-id="ScXkkFRKe6k4bAtlBOAnPc">
+        <tr data-page-node-id="OyKRNGirT8ms5RB4WEcKkn"><td data-page-node-id="gO0xoIqJ0oJ2itIvta2Hy8">FOB Value <span id="r_qty1" data-page-node-id="Gg3lEE3IHpHEcYd6PROCNm"></span></td><td id="r_fob" data-page-node-id="avbzuD7td0OZsvRPwcTurN">$0.00</td></tr>
+        <tr data-page-node-id="t5RcNgDSqsQTdJG3fxjWGj"><td data-page-node-id="eOMLDkHlHe1yRKkYxAj7SA">Ocean Freight</td><td id="r_freight" data-page-node-id="grnLvXSjCQtcQUtxCEeeqj">$0.00</td></tr>
+        <tr data-page-node-id="Nhmm8DcqXrmYHUOS3001Ff"><td data-page-node-id="sbfqjK1zepyqhDO8CdcliQ">Insurance</td><td id="r_ins" data-page-node-id="Mcp4HDPgB91NbixHXz3aBG">$0.00</td></tr>
+        <tr class="total" data-page-node-id="VPadCmydw3G4hnHDrMQXoZ"><td data-page-node-id="kvWA1QlSTw4X00OMhVWA94">CIF Value</td><td id="r_cif" data-page-node-id="X7JGG7DoEfHYCLEB0C7qVj">$0.00</td></tr>
+        <tr data-page-node-id="HzHPmrTFPxEZyemNKLyfsp"><td data-page-node-id="k9dXML4XXDp3WiiktoKx87">Import Duties &amp; Taxes</td><td id="r_tax" data-page-node-id="83LiyMHPUZ7E2GXL6WnsBh">$0.00</td></tr>
+        <tr data-page-node-id="BNgBjvThLSruKhHd5Ww0J8"><td data-page-node-id="d1LTuipm6DR3V3Ji3z4H5h">Port &amp; Clearing</td><td id="r_port" data-page-node-id="277nmrUb0G4LqI9AcwiDmW">$0.00</td></tr>
+        <tr data-page-node-id="LU78voRYeok8LlwfWJE5IC"><td data-page-node-id="LtfpoUTsO2BBRBG8QeSfFb">Inland Transport</td><td id="r_inland" data-page-node-id="htwsQ81Pi4UnseU2W7UcRL">$0.00</td></tr>
+        <tr data-page-node-id="hChlbJ0dK1vBzYmv0kAYVP"><td data-page-node-id="46flXzYcLgGuxhTQAcQ7r3">Compliance / Certification (allocated)</td><td id="r_comp" data-page-node-id="cGs82nTBYg9F1vzk7091z8">$0.00</td></tr>
+        <tr class="total" data-page-node-id="2uehLqE4iq8lBmn70foXHD"><td data-page-node-id="qHaiRizpxYW4SFqud70j79">Total Landed Cost / unit</td><td id="r_total" data-page-node-id="xraEWjSZmTcYhIrJGHfM8D">$0.00</td></tr>
+        <tr class="total" data-page-node-id="qNeFjpnVXmqPaMKytu7p2Z"><td data-page-node-id="oU4WuNpIB3GigKVdzc5pay">Total Shipment Landed Cost</td><td id="r_shipment" data-page-node-id="CshzSKlTnpBUhSpb03F0gY">$0.00</td></tr>
+        <tr class="retail" data-page-node-id="WWaWEWT2sX3lLPNJfWooJB"><td data-page-node-id="3CiqRh6eIvw1KldsjA1xpD">Retail Price <span class="multiplier" id="r_mult" data-page-node-id="Wk2HB0i0M6COjggMPiXK4D">FOB × 1.00</span></td><td id="r_retail" data-page-node-id="No9hPfUSrIGlEZDihUfBbf">$0.00</td></tr>
+        <tr class="retail" data-page-node-id="WWzDQHW7VUufjtp7UUX99q"><td id="r_loc_label" data-page-node-id="bEmjIyfXPi39F2QCPy8vej">Retail Price (local)</td><td id="r_retail_loc" data-page-node-id="fg65tdidAZyeu8XESmiLlE">—</td></tr>
+      </table>
+
+      <div class="two" data-page-node-id="sP3kxxcG5O5Y6JWx5EhdTq">
+        <div class="box" data-page-node-id="fga7ksyS2qbBmxc1jLGYBV">
+          <h4 id="ladder_title" data-page-node-id="R7n6jQ8Dvzc23CAbwX4vVJ">Import Tax Ladder</h4>
+          <table id="ladder" data-page-node-id="UvJYsxsiAKOKKRoriTY9bK"></table>
+        </div>
+        <div class="box" data-page-node-id="JQCDCAc53IAryIBphtgUQU">
+          <h4 data-page-node-id="xyjlN83fE5uw2KzHnJ7ffI">Country Notes &amp; Compliance</h4>
+          <ul class="note-list" id="notes" data-page-node-id="8uVFtGCOpaYcp9VMrxuYsG"></ul>
+        </div>
+      </div>
+
+      <a id="wa_link" class="wa-cta" href="#" target="_blank" data-page-node-id="Oyizfmhyu1GbVzAvWDkUPB">📱 Send this calculation to JML on WhatsApp</a>
+
+      <div class="ob">
+        <h4>📦 Next step — turn this number into a quote</h4>
+        <div class="sub">Send it straight to Jimmy. He answers on WhatsApp, usually within a few hours. No obligation.</div>
+        <div class="ob-actions">
+          <a class="btn btn-wa" id="quote_link" href="#" target="_blank">💬 Request a Quote</a>
+          <button class="btn btn-navy" type="button" onclick="document.getElementById('obform').classList.toggle('show');this.blur()">📝 Place Order / Proforma</button>
+          <button class="btn btn-ghost" type="button" onclick="window.print()">🖨️ Save as PDF</button>
+        </div>
+
+        <div class="ob-form" id="obform">
+          <div class="f2">
+            <div><label>Company / Shop name <span class="req">*</span></label><input id="o_co" placeholder="e.g. Gold Star Plus Ltd"></div>
+            <div><label>Contact person <span class="req">*</span></label><input id="o_name" placeholder="Full name"></div>
+            <div><label>WhatsApp number <span class="req">*</span></label><input id="o_tel" placeholder="+233 ..."></div>
+            <div><label>Email</label><input id="o_mail" placeholder="you@company.com"></div>
+            <div><label>Delivery port</label><input id="o_port"></div>
+            <div><label>Quantity (units)</label><input id="o_qty" type="number" min="1"></div>
+          </div>
+          <div style="margin-top:10px"><label>Notes — voltage, branding, packaging, spare parts…</label><textarea id="o_note" placeholder="e.g. 220V/50Hz, private label 'Gold Star Plus', 2% spare parts"></textarea></div>
+          <div class="ob-actions" style="margin-top:12px">
+            <button class="btn btn-wa" type="button" id="o_wa">📱 Send Order via WhatsApp</button>
+            <button class="btn btn-navy" type="button" id="o_email">✉️ Send by Email</button>
+            <button class="btn btn-ghost" type="button" id="o_csv">⬇️ Download .csv</button>
+          </div>
+          <div class="sub" style="margin:10px 0 0">Order ref <b id="o_ref">—</b> · We reply with a proforma invoice, production lead time and payment terms.</div>
+        </div>
+      </div>
+
+      <div class="print-only">
+        <b>JML Electric</b> — Foshan, Guangdong, China · WhatsApp +86 133 1839 3556 · order@jMideal.com<br>
+        Figures are estimates based on current tariff schedules and typical shipping costs. Final prices, lead time and payment terms are confirmed on the proforma invoice.
+      </div>
+
+      <p class="note" data-page-node-id="lg5zYzA2Pd6k47uZz9huEZ">
+        ⚠️ Planning estimates only. Duty rates change with each national budget; always confirm the HS code and current tariff with a licensed customs broker before shipping.
+        KD / semi-knocked-down (SKD) shipments are usually assessed at a lower parts duty rate — change the Import Duty % field to model that.
+        Contact JML: WhatsApp +86 133 1839 3556 · order@jMideal.com
+      </p>
+
+      <p class="back" data-page-node-id="nwgGCvo73lDSPm4uZcU4HS"><a href="https://www.jmideal.cn/" data-page-node-id="9SDw5qUPXLuCff0NX7fBYZ">← Back to JML Electric</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const C = {
+  NG: {
+    name:'Nigeria', flag:'🇳🇬', portname:'Apapa / Tin Can Island, Lagos', cur:'NGN', sym:'₦', fx:1550,
+    freight:18, port:14, inland:6, ins:1.5, duty:20, compliance:850,
+    ladder:[
+      {label:'Import Duty', base:'cif'},
+      {label:'Surcharge (7% of duty)', base:'duty', rate:0.07},
+      {label:'ETLS / ECOWAS Levy (0.5% of CIF)', base:'cif', rate:0.005},
+      {label:'Import Levy FCS (4% of FOB)', base:'fob', rate:0.04, key:'fcs'},
+      {label:'VAT 7.5%', base:'cum', rate:0.075}
+    ],
+    notes:[
+      'SONCAP certificate is mandatory for air conditioners — Route A ≈ US$850 per shipment (product certificate + SONCAP).',
+      'Form M + PAAR required before the vessel arrives; no SONCAP = no Form M.',
+      'MEPS applies: minimum EER 3.0 W/W for split units; NESREA bans HCFC/CFC pre-charged units.',
+      'Budget for demurrage risk — Apapa free time is only 3–5 days, then US$100+/container/day.'
+    ]
+  },
+  GH: {
+    name:'Ghana', flag:'🇬🇭', portname:'Tema Port', cur:'GHS', sym:'GH₵', fx:12.2,
+    freight:15, port:10, inland:4, ins:0.3, duty:20, compliance:400,
+    ladder:[
+      {label:'Import Duty', base:'cif'},
+      {label:'ECOWAS Levy (0.5% of CIF)', base:'cif', rate:0.005},
+      {label:'EDIF Levy (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Exim Levy (0.5% of CIF)', base:'cif', rate:0.005},
+      {label:'NHIL Health Tax (2.5%)', base:'cifduty', rate:0.025},
+      {label:'GETFund Education (2.5%)', base:'cifduty', rate:0.025},
+      {label:'VAT 15%', base:'cifduty', rate:0.15}
+    ],
+    notes:[
+      'Ghana cleared through GRA ICUMS — values are benchmark-based, keep invoices consistent.',
+      'Ghana Standards Authority conformity assessment required for electrical appliances.',
+      'Total tax burden typically lands around 46% of CIF for HS 8415.',
+      'JML has a local team in Accra + Kumasi — installation and after-sales can be bundled.'
+    ]
+  },
+  KE: {
+    name:'Kenya', flag:'🇰🇪', portname:'Mombasa Port', cur:'KES', sym:'KSh', fx:129,
+    freight:22, port:13, inland:8, ins:1.0, duty:25, compliance:600,
+    ladder:[
+      {label:'Import Duty (EAC 25%)', base:'cif'},
+      {label:'Import Declaration Fee IDF (2.5% of CIF)', base:'cif', rate:0.025},
+      {label:'Railway Development Levy RDL (2% of CIF)', base:'cif', rate:0.02},
+      {label:'VAT 16%', base:'cum', rate:0.16}
+    ],
+    notes:[
+      'KEBS PVoC Certificate of Conformity must be obtained in China BEFORE loading — allow 2–4 weeks.',
+      'From 2026 KRA requires eTIMS-compliant invoices; non-compliant duty claims can be disallowed.',
+      'No PVoC CoC = mandatory destination inspection at Mombasa, at much higher cost and delay.',
+      'IDF was cut from 3.5% to 2.5% by the Finance Act 2023 — many online calculators are outdated.'
+    ]
+  },
+  SN: {
+    name:'Senegal', flag:'🇸🇳', portname:'Port Autonome de Dakar', cur:'XOF', sym:'CFA', fx:610,
+    freight:18, port:13, inland:6, ins:1.0, duty:20, compliance:550,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'WAEMU / UEMOA Common External Tariff — same duty bands as Côte d\'Ivoire, Mali, Benin, Togo, Burkina.',
+      'DPI (Import Declaration) via ORBUS required for shipments over 1,000,000 FCFA.',
+      'BSC Cargo Tracking Note is mandatory; COTECNA pre-shipment inspection for some categories.',
+      'Customs broker (transitaire) typically US$250–900 per shipment.'
+    ]
+  },
+  CI: {
+    name:'Côte d\'Ivoire', flag:'🇨🇮', portname:'Port of Abidjan', cur:'XOF', sym:'CFA', fx:610,
+    freight:16, port:12, inland:6, ins:1.0, duty:20, compliance:550,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'BSC (Bordereau de Suivi de Cargaison) is mandatory for all sea freight into Abidjan.',
+      'Abidjan is the transit gateway for Mali and Burkina Faso — good re-export base.',
+      'WAEMU TEC duties are identical across the 8 member states; only VAT is set nationally.',
+      'JML supports local-currency settlement (XOF) — ask for terms.'
+    ]
+  },
+  ML: {
+    name:'Mali', flag:'🇲🇱', portname:'Via Abidjan / Dakar (landlocked)', cur:'XOF', sym:'CFA', fx:610,
+    freight:20, port:14, inland:22, ins:1.2, duty:20, compliance:600,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'Landlocked — add transit corridor cost (Abidjan or Dakar) plus border crossing time.',
+      'Duty is usually paid at the port of entry, then transit bond to Bamako.',
+      'Dry Sahel climate: evaporative air coolers work well here; coastal AC demand differs.',
+      'Longer lead time — quote customers 45–60 days door to door.'
+    ]
+  },
+  BF: {
+    name:'Burkina Faso', flag:'🇧🇫', portname:'Via Abidjan / Lomé / Tema (landlocked)', cur:'XOF', sym:'CFA', fx:610,
+    freight:20, port:14, inland:20, ins:1.2, duty:20, compliance:600,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'Landlocked — transit via Abidjan, Lomé or Tema; budget 10–14 days inland transit.',
+      'Same WAEMU duty ladder; inland transport is the biggest variable.',
+      'Hot dry climate — high demand for both AC and evaporative coolers.',
+      'MOQ 10 units is a real advantage here: most suppliers demand full containers.'
+    ]
+  },
+  BJ: {
+    name:'Benin', flag:'🇧🇯', portname:'Port of Cotonou', cur:'XOF', sym:'CFA', fx:610,
+    freight:17, port:12, inland:6, ins:1.0, duty:20, compliance:500,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'Cotonou serves as a re-export hub into Nigeria — check the rules if cargo moves onward.',
+      'BSC Cargo Tracking Note mandatory.',
+      'WAEMU TEC rates; VAT 18%.',
+      'Port congestion is lower than Lagos — often cheaper to clear here and truck north.'
+    ]
+  },
+  TG: {
+    name:'Togo', flag:'🇹🇬', portname:'Port of Lomé', cur:'XOF', sym:'CFA', fx:610,
+    freight:16, port:11, inland:7, ins:1.0, duty:20, compliance:500,
+    ladder:[
+      {label:'Droit de Douane (TEC 20%)', base:'cif'},
+      {label:'Redevance Statistique (1% of CIF)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire Solidarité (1%)', base:'cif', rate:0.01},
+      {label:'Prélèv. Communautaire CEDEAO (0.5%)', base:'cif', rate:0.005},
+      {label:'TVA 18%', base:'cum', rate:0.18}
+    ],
+    notes:[
+      'Lomé is the deepest port in West Africa and a major transit hub for the Sahel.',
+      'Efficient clearance — popular alternative when Lagos is congested.',
+      'WAEMU TEC rates; VAT 18%.',
+      'Good base for serving Burkina Faso, Niger and northern Nigeria.'
+    ]
+  }
+};
+
+let current = 'NG';
+
+function buildBar(){
+  const bar = document.getElementById('cbar');
+  bar.innerHTML = '';
+  Object.keys(C).forEach(k=>{
+    const b = document.createElement('button');
+    b.className = 'cbtn' + (k===current?' on':'');
+    b.textContent = C[k].flag + ' ' + C[k].name;
+    b.onclick = ()=> selectCountry(k);
+    bar.appendChild(b);
+  });
+}
+
+function selectCountry(k){
+  current = k;
+  const c = C[k];
+  document.getElementById('freight').value = c.freight;
+  document.getElementById('port').value = c.port;
+  document.getElementById('inland').value = c.inland;
+  document.getElementById('insPct').value = c.ins;
+  document.getElementById('dutyPct').value = c.duty;
+  document.getElementById('compliance').value = c.compliance;
+  document.getElementById('rate').value = c.fx;
+  document.getElementById('fxLabel').textContent = 'USD → ' + c.cur + ' Rate';
+  document.getElementById('fcs').parentNode.style.display = (k==='NG') ? 'flex' : 'none';
+  buildBar();
+  document.getElementById('result').classList.remove('show');
+}
+
+function money(v){ return '$' + v.toFixed(2); }
+function fmt(v){ return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+
+function calculate(){
+  const c = C[current];
+  const fob = parseFloat(document.getElementById('fob').value) || 0;
+  const qty = parseFloat(document.getElementById('qty').value) || 1;
+  const freight = parseFloat(document.getElementById('freight').value) || 0;
+  const insPct = parseFloat(document.getElementById('insPct').value) || 0;
+  const dutyPct = parseFloat(document.getElementById('dutyPct').value) || 0;
+  const portFee = parseFloat(document.getElementById('port').value) || 0;
+  const inland = parseFloat(document.getElementById('inland').value) || 0;
+  const markup = parseFloat(document.getElementById('markup').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || c.fx;
+  const compTotal = parseFloat(document.getElementById('compliance').value) || 0;
+  const btu = document.getElementById('btu').value;
+  const useFcs = document.getElementById('fcs').checked && current === 'NG';
+
+  const insurance = (fob + freight) * insPct / 100;
+  const cif = fob + freight + insurance;
+
+  const rows = [];
+  let duty = 0, cum = 0;
+  c.ladder.forEach(item=>{
+    if (item.key === 'fcs' && !useFcs) return;
+    let base, amt;
+    const r = (item.base === 'cif' && !item.rate) ? dutyPct/100 : item.rate;
+    if (item.base === 'cif' && !item.rate){ base = cif; amt = base * dutyPct/100; duty = amt; }
+    else if (item.base === 'cif'){ base = cif; amt = base * r; }
+    else if (item.base === 'duty'){ base = duty; amt = base * r; }
+    else if (item.base === 'fob'){ base = fob; amt = base * r; }
+    else if (item.base === 'cifduty'){ base = cif + duty; amt = base * r; }
+    else if (item.base === 'cum'){ base = cif + cum; amt = base * r; }
+    else { base = cif; amt = base * (r || 0); }
+    cum += amt;
+    rows.push({label:item.label, amt:amt, isVat:(item.base==='cum'||item.base==='cifduty') && r>=0.1});
+  });
+
+  const totalTax = cum;
+  const compUnit = compTotal / qty;
+  const landed = cif + totalTax + portFee + inland + compUnit;
+  const retail = landed * (1 + markup/100);
+  const retailLoc = retail * rate;
+  const multiplier = landed / fob;
+
+  document.getElementById('r_title').textContent = '📊 ' + c.flag + ' ' + c.name + ' — Landed Cost Breakdown (' + c.portname + ')';
+  document.getElementById('r_qty1').textContent = '(× ' + Math.round(qty) + ' units)';
+  document.getElementById('r_fob').textContent = money(fob) + ' / ' + money(fob*qty);
+  document.getElementById('r_freight').textContent = money(freight);
+  document.getElementById('r_ins').textContent = money(insurance) + ' (' + insPct + '%)';
+  document.getElementById('r_cif').textContent = money(cif);
+  document.getElementById('r_tax').textContent = money(totalTax);
+  document.getElementById('r_port').textContent = money(portFee);
+  document.getElementById('r_inland').textContent = money(inland);
+  document.getElementById('r_comp').textContent = money(compUnit) + ' (' + money(compTotal) + ' / shipment)';
+  document.getElementById('r_total').textContent = money(landed);
+  document.getElementById('r_shipment').textContent = money(landed * qty);
+  document.getElementById('r_retail').textContent = money(retail);
+  document.getElementById('r_loc_label').textContent = 'Retail Price (' + c.cur + ')';
+  document.getElementById('r_retail_loc').textContent = c.sym + ' ' + fmt(retailLoc);
+  document.getElementById('r_mult').textContent = 'FOB × ' + multiplier.toFixed(2);
+
+  const lt = document.getElementById('ladder');
+  lt.innerHTML = '';
+  rows.forEach(rw=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = '<td class="ts">' + rw.label + '</td><td class="tv">' + money(rw.amt) + '</td>';
+    lt.appendChild(tr);
+  });
+  const tr = document.createElement('tr');
+  tr.innerHTML = '<td class="ts" style="font-weight:700;padding-top:6px;border-top:1px solid #E8D9A8;">Total Tax Burden (' + (totalTax/cif*100).toFixed(1) + '% of CIF)</td><td class="tv" style="font-weight:700;padding-top:6px;border-top:1px solid #E8D9A8;">' + money(totalTax) + '</td>';
+  lt.appendChild(tr);
+  document.getElementById('ladder_title').textContent = c.name + ' Import Tax Ladder — HS 8415';
+
+  const nl = document.getElementById('notes');
+  nl.innerHTML = '';
+  c.notes.forEach(n=>{ const li = document.createElement('li'); li.textContent = n; nl.appendChild(li); });
+
+  const wa = encodeURIComponent(
+    `Hello JML, I used your landed cost calculator:\n` +
+    `Country: ${c.name} (${c.portname})\n` +
+    `Product: ${btu} BTU Midea AC × ${Math.round(qty)} units\n` +
+    `FOB: $${fob}  →  CIF: $${cif.toFixed(2)}\n` +
+    `Duties & taxes: $${totalTax.toFixed(2)}\n` +
+    `Landed cost/unit: $${landed.toFixed(2)} (FOB × ${multiplier.toFixed(2)})\n` +
+    `Shipment total: $${(landed*qty).toFixed(2)}\n` +
+    `Retail @${markup}%: $${retail.toFixed(2)} / ${c.cur} ${fmt(retailLoc)}\n` +
+    `Please confirm rates and send a firm quote.`
+  );
+  document.getElementById('wa_link').href = 'https://wa.me/8613318393556?text=' + encodeURIComponent(
+    'Hello JML, I used your landed cost calculator:\n' +
+    'Country: ' + c.name + ' (' + c.portname + ')\n' +
+    'Product: ' + btu + ' BTU Midea AC × ' + Math.round(qty) + ' units\n' +
+    'FOB: $' + fob.toFixed(2) + '  →  CIF: $' + cif.toFixed(2) + '\n' +
+    'Landed cost/unit: $' + landed.toFixed(2) + '   Shipment: $' + (landed*qty).toFixed(2) + '\n' +
+    'Retail @' + markup + '%: $' + retail.toFixed(2) + '\n' +
+    'Please confirm rates and send a firm quote.'
+  );
+
+  var quick = 'Hello JML — please quote me:\n' +
+    btu + ' BTU Midea split AC × ' + Math.round(qty) + ' units → ' + c.name + ' (' + c.portname + ')\n' +
+    'Based on your calculator: FOB $' + fob.toFixed(2) + ', landed $' + landed.toFixed(2) + '/unit, shipment $' + (landed*qty).toFixed(2) + '.\n' +
+    'Please confirm price, MOQ, lead time and payment terms.';
+  document.getElementById('quote_link').href = 'https://wa.me/8613318393556?text=' + encodeURIComponent(quick);
+
+  window.CTX = { c:c, btu:btu, qty:qty, fob:fob, freight:freight, insurance:insurance, cif:cif,
+                 totalTax:totalTax, portFee:portFee, inland:inland, landed:landed,
+                 retail:retail, retailLoc:retailLoc, markup:markup };
+  refreshOrder();
+
+  document.getElementById('result').classList.add('show');
+  document.getElementById('result').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+/* ============ order / quote flow ============ */
+function rv(id){ var e=document.getElementById(id); return e ? (e.value||'').trim() : ''; }
+function newRef(){
+  var d=new Date(), p=function(n){return String(n).padStart(2,'0')};
+  return 'JML-'+d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+}
+function refreshOrder(){
+  var x = window.CTX; if(!x) return;
+  var port = document.getElementById('o_port');
+  var qty  = document.getElementById('o_qty');
+  if (port && !port.value) port.value = x.c.portname;
+  if (qty && (!qty.value || qty.dataset.lock === '1')) { qty.value = Math.round(x.qty); qty.dataset.lock = '1'; }
+  var ref = document.getElementById('o_ref');
+  if (ref && (ref.textContent === '—' || !ref.textContent)) ref.textContent = newRef();
+}
+function orderText(){
+  var x = window.CTX; if(!x) return '';
+  var q = parseFloat(rv('o_qty')) || x.qty;
+  var L = [];
+  L.push('*NEW ORDER / QUOTE REQUEST*  ' + document.getElementById('o_ref').textContent);
+  L.push('Buyer: ' + (rv('o_co')||'-') + '   Contact: ' + (rv('o_name')||'-'));
+  L.push('WhatsApp: ' + (rv('o_tel')||'-') + '   Email: ' + (rv('o_mail')||'-'));
+  L.push('Destination: ' + x.c.name + ' — ' + (rv('o_port')||x.c.portname));
+  L.push('Product: Midea ' + x.btu + ' BTU split AC × ' + q + ' units (HS 8415)');
+  L.push('FOB: $' + x.fob.toFixed(2) + '/unit   Freight+Ins: $' + (x.freight+x.insurance).toFixed(2));
+  L.push('CIF: $' + x.cif.toFixed(2) + '   Duties & taxes: $' + x.totalTax.toFixed(2));
+  L.push('Landed: $' + x.landed.toFixed(2) + '/unit   Shipment total: $' + (x.landed*q).toFixed(2));
+  L.push('Suggested retail: $' + x.retail.toFixed(2) + ' = ' + x.c.cur + ' ' + Math.round(x.retailLoc).toLocaleString());
+  L.push('Notes: ' + (rv('o_note')||'-'));
+  L.push('Please send proforma invoice, lead time and payment terms.');
+  return L.join('\n');
+}
+function orderCSV(){
+  var x = window.CTX; if(!x) return '';
+  var q = parseFloat(rv('o_qty')) || x.qty;
+  var rows = [
+    ['Ref','Company','Contact','WhatsApp','Email','Destination','Port','Product','Qty','FOB_USD','CIF_USD','Tax_USD','Landed_USD','Shipment_USD','Retail_USD','Retail_Local','Currency','Notes'],
+    [document.getElementById('o_ref').textContent, rv('o_co'), rv('o_name'), rv('o_tel'), rv('o_mail'),
+     x.c.name, rv('o_port')||x.c.portname, 'Midea '+x.btu+' BTU split AC', q,
+     x.fob.toFixed(2), x.cif.toFixed(2), x.totalTax.toFixed(2), x.landed.toFixed(2), (x.landed*q).toFixed(2),
+     x.retail.toFixed(2), Math.round(x.retailLoc), x.c.cur, (rv('o_note')||'').replace(/[\r\n]+/g,' ')]
+  ];
+  return rows.map(function(r){ return r.map(function(c){ return '"'+String(c).replace(/"/g,'""')+'"' }).join(',') }).join('\r\n');
+}
+document.getElementById('o_wa').onclick = function(){
+  var miss = [];
+  if(!rv('o_co')) miss.push('company name');
+  if(!rv('o_name')) miss.push('contact person');
+  if(!rv('o_tel')) miss.push('WhatsApp number');
+  if(miss.length){ alert('Please fill in: ' + miss.join(', ')); return; }
+  window.open('https://wa.me/8613318393556?text=' + encodeURIComponent(orderText()), '_blank');
+};
+document.getElementById('o_email').onclick = function(){
+  var x = window.CTX; if(!x) return;
+  var subj = 'Order request ' + document.getElementById('o_ref').textContent + ' — Midea ' + x.btu + ' BTU × ' + (rv('o_qty')||Math.round(x.qty)) + ' to ' + x.c.name;
+  location.href = 'mailto:order@jMideal.com?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(orderText());
+};
+document.getElementById('o_csv').onclick = function(){
+  var blob = new Blob(['\ufeff'+orderCSV()], {type:'text/csv;charset=utf-8'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = document.getElementById('o_ref').textContent + '.csv';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+};
+
+buildBar();
+selectCountry('NG');
+calculate();
+
+document.getElementById('o_qty').addEventListener('input', function(){ this.dataset.lock='0'; });
+</script>
+
+<div class="navcard">
+  <div class="hint">Done with the numbers? —</div>
+  <a href="/">← Back to JML Home</a>
+  <a href="https://www.jmideal.cn/products.html">Browse 22 Midea SKUs ↗</a>
+  <a href="https://www.jmideal.cn/ac-buddy.html">Container Load Calculator ↗</a>
+  <a href="https://wa.me/8613318393556">💬 Chat on WhatsApp</a>
+</div>
+
+</body>
+</html>

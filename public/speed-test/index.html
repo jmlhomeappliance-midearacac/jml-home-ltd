@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JML Site Speed Test — Africa</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{--navy:#0f2942;--navy2:#163a5c;--gold:#c9a86a;--ink:#12202f;--muted:#7b8ca0;--line:#e3e9f0;--bg:#fff;--soft:#f6f8fb;--green:#0f7b4a;--red:#c0392b;--amber:#b8860b}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;background:var(--soft);color:var(--ink);line-height:1.55}
+  .wrap{max-width:640px;margin:0 auto;padding:18px 16px 60px}
+  header{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:14px;padding:22px 20px;margin-bottom:16px}
+  header h1{margin:0 0 4px;font-size:20px}
+  header p{margin:0;font-size:13px;opacity:.85}
+  .card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+  .row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .row:last-child{border-bottom:0}
+  .k{font-size:14px;color:var(--muted)}
+  .v{font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+  .big{font-size:30px;font-weight:800;letter-spacing:-.5px}
+  .good{color:var(--green)} .warn{color:var(--amber)} .bad{color:var(--red)}
+  .hero{text-align:center;padding:8px 0 4px}
+  .hero .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+  .bar{height:8px;background:#e9eef4;border-radius:6px;overflow:hidden;margin:10px 0 4px}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--navy));transition:width .5s}
+  button{width:100%;background:var(--navy);color:#fff;border:0;border-radius:10px;padding:14px;font-size:15px;font-weight:700;cursor:pointer;margin-top:8px}
+  button.gold{background:var(--gold);color:#3a2c0c}
+  button.ghost{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+  .note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid #c9d6e2;border-top-color:var(--navy);border-radius:50%;animation:spin .8s linear infinite;vertical-align:-2px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .popline{background:#fdfaf3;border-left:4px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;font-size:14px;margin-top:6px}
+  .topnav{position:sticky;top:8px;z-index:50;display:flex;align-items:center;gap:12px;background:var(--navy);border:1px solid rgba(201,168,106,.35);border-radius:12px;padding:10px 14px;margin-bottom:14px;font-size:13px}
+  .topnav a{color:var(--gold);text-decoration:none;font-weight:600;white-space:nowrap}
+  .topnav a:hover{color:#fff}
+  .topnav .sp{flex:1}
+  .topnav .home{background:rgba(201,168,106,.18);padding:6px 13px;border-radius:8px}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left}
+  th{color:var(--muted);font-weight:600}
+  td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="topnav">
+  <a class="home" href="/">← JML Home</a>
+  <span class="sp"></span>
+  <a href="/landed-cost-calculator">Cost Calculator</a>
+  <a href="https://wa.me/8613318393556">WhatsApp</a>
+</nav>
+
+<header>
+  <h1>Site Speed Test — Africa</h1>
+  <p>JML · jmlhome.ltd &nbsp;|&nbsp; Real measurement from your device &amp; network</p>
+</header>
+
+<div class="card">
+  <div class="hero">
+    <div class="lbl">This page loaded in</div>
+    <div class="big" id="fpLoad"><span class="spinner"></span></div>
+    <div class="bar"><i id="fpBar"></i></div>
+    <div class="note" id="fpVerdict">measuring…</div>
+  </div>
+</div>
+
+<div class="card">
+  <div style="font-weight:700;margin-bottom:4px;font-size:15px">Connection to Cloudflare</div>
+  <div class="row"><span class="k">Served by edge (PoP)</span><span class="v" id="pop">…</span></div>
+  <div id="popLine" class="popline" style="display:none"></div>
+  <div class="row"><span class="k">Cache status</span><span class="v" id="cache">—</span></div>
+  <div class="row"><span class="k">Your network</span><span class="v" id="net">—</span></div>
+</div>
+
+<div class="card">
+  <div style="font-weight:700;margin-bottom:4px;font-size:15px">Page timing (milliseconds)</div>
+  <div class="row"><span class="k">DNS lookup</span><span class="v" id="dns">—</span></div>
+  <div class="row"><span class="k">TCP + TLS handshake</span><span class="v" id="tcp">—</span></div>
+  <div class="row"><span class="k">Server response (TTFB)</span><span class="v" id="ttfb">—</span></div>
+  <div class="row"><span class="k">HTML download</span><span class="v" id="dl">—</span></div>
+  <div class="row"><span class="k">First content painted</span><span class="v" id="fcp">—</span></div>
+  <div class="row"><span class="k">Fully loaded (all images)</span><span class="v" id="load">—</span></div>
+</div>
+
+<div class="card">
+  <div style="font-weight:700;margin-bottom:4px;font-size:15px">Download speed</div>
+  <div class="hero" style="padding-top:0">
+    <div class="big" id="mbps"><span class="spinner"></span></div>
+    <div class="note" id="mbpsNote">testing…</div>
+  </div>
+</div>
+
+<div class="card">
+  <div style="font-weight:700;margin-bottom:8px;font-size:15px">Site comparison</div>
+  <table>
+    <tr><th>Site</th><th style="text-align:right">Load time</th><th style="text-align:right">Size</th></tr>
+    <tr><td>jmlhome.ltd <span style="color:#7b8ca0">(this)</span></td><td class="n" id="c1t">—</td><td class="n" id="c1s">—</td></tr>
+    <tr><td>jmideal.cn</td><td class="n" id="c2t">—</td><td class="n" id="c2s">—</td></tr>
+  </table>
+  <div class="note">Both files are the same 78 KB product image, downloaded with cache disabled.</div>
+</div>
+
+<div class="card" id="resultCard" style="display:none">
+  <div style="font-weight:700;margin-bottom:6px;font-size:15px">Result summary</div>
+  <div id="summary" style="font-family:Consolas,monospace;font-size:12px;background:#f6f8fb;padding:12px;border-radius:8px;white-space:pre-wrap;word-break:break-all"></div>
+  <button class="gold" id="wa">📲 Send this result to Jimmy (WhatsApp)</button>
+  <button class="ghost" id="copy">Copy result text</button>
+</div>
+
+<div class="card">
+  <button id="again">🔄 Run test again</button>
+  <div class="note">
+    Tips before testing: close other tabs, turn off VPN if you have one, and run it once on <b>Wi-Fi</b> and once on <b>mobile data</b>.
+  </div>
+</div>
+
+</div>
+
+<script>
+const POP = {
+  LOS:'Lagos, Nigeria', ACC:'Accra, Ghana', ABJ:'Abidjan, Côte d’Ivoire', DKR:'Dakar, Senegal',
+  NBO:'Nairobi, Kenya', JNB:'Johannesburg, South Africa', CPT:'Cape Town, South Africa',
+  DUR:'Durban, South Africa', CAI:'Cairo, Egypt', CMN:'Casablanca, Morocco', ADD:'Addis Ababa, Ethiopia',
+  KGL:'Kigali, Rwanda', EBB:'Kampala, Uganda', DAR:'Dar es Salaam, Tanzania', LUN:'Lusaka, Zambia',
+  HRE:'Harare, Zimbabwe', TNR:'Antananarivo, Madagascar', ALG:'Algiers, Algeria', TUN:'Tunis, Tunisia',
+  RUN:'Saint-Denis, Réunion', LAD:'Luanda, Angola', MPM:'Maputo, Mozambique', WDH:'Windhoek, Namibia',
+  GBE:'Gaborone, Botswana', BZV:'Brazzaville, Congo', FIH:'Kinshasa, DRC', SSG:'Malabo, Eq. Guinea',
+  BJM:'Bujumbura, Burundi', NSI:'Yaoundé, Cameroon', OUA:'Ouagadougou, Burkina Faso', BKO:'Bamako, Mali',
+  NKC:'Nouakchott, Mauritania', CKY:'Conakry, Guinea', FNA:'Freetown, Sierra Leone', ROB:'Monrovia, Liberia',
+  LFW:'Lomé, Togo', COTO:'Cotonou, Benin', NDJ:'N’Djamena, Chad', JIB:'Djibouti', MOG:'Mogadishu, Somalia',
+  KRT:'Khartoum, Sudan', TIP:'Tripoli, Libya', MWZ:'Mwanza, Tanzania', BLZ:'Blantyre, Malawi', LLW:'Lilongwe, Malawi',
+  LHR:'London, UK', CDG:'Paris, France', FRA:'Frankfurt, Germany', AMS:'Amsterdam, NL',
+  SIN:'Singapore', HKG:'Hong Kong', NRT:'Tokyo, Japan', IAD:'Washington, US', LAX:'Los Angeles, US',
+  MRS:'Marseille, France', MAD:'Madrid, Spain', IST:'Istanbul, Turkey', DXB:'Dubai, UAE'
+};
+const $ = id => document.getElementById(id);
+const ms = v => v == null ? '—' : Math.round(v) + ' ms';
+const grade = (v, good, ok) => v <= good ? 'good' : (v <= ok ? 'warn' : 'bad');
+
+async function getEdge() {
+  try {
+    const r = await fetch(location.pathname + '?edge=' + Date.now(), { cache: 'no-store' });
+    return { ray: r.headers.get('cf-ray') || '', cache: r.headers.get('cf-cache-status') || '—' };
+  } catch (e) { return { ray: '', cache: '—' }; }
+}
+
+async function speed(url) {
+  const t0 = performance.now();
+  const r = await fetch(url + (url.includes('?') ? '&' : '?') + 'nocache=' + Date.now(), { cache: 'no-store' });
+  const b = await r.arrayBuffer();
+  return { ms: performance.now() - t0, bytes: b.byteLength };
+}
+
+function netInfo() {
+  const c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  if (!c) return navigator.userAgent.indexOf('Mobile') > -1 ? 'Mobile' : 'Unknown';
+  return (c.effectiveType ? c.effectiveType.toUpperCase() : '?') + (c.downlink ? ' · ~' + c.downlink + ' Mb/s' : '');
+}
+
+async function run() {
+  $('fpLoad').innerHTML = '<span class="spinner"></span>';
+  // ---- navigation timing ----
+  await new Promise(res => {
+    if (document.readyState === 'complete') return res();
+    addEventListener('load', res, { once: true });
+    setTimeout(res, 8000);
+  });
+  const nav = performance.getEntriesByType('navigation')[0] || {};
+  const dns = nav.domainLookupEnd - nav.domainLookupStart;
+  const tcp = (nav.connectEnd - nav.connectStart) || 0;
+  const ttfb = nav.responseStart - nav.requestStart;
+  const dl = nav.responseEnd - nav.responseStart;
+  const total = nav.loadEventEnd - nav.startTime || nav.duration;
+
+  $('dns').textContent = ms(dns);
+  $('tcp').textContent = ms(tcp);
+  $('ttfb').innerHTML = '<span class="' + grade(ttfb, 200, 600) + '">' + ms(ttfb) + '</span>';
+  $('dl').textContent = ms(dl);
+  $('load').innerHTML = '<span class="' + grade(total, 2000, 4000) + '">' + ms(total) + '</span>';
+
+  const fcpE = performance.getEntriesByName('first-contentful-paint')[0];
+  $('fcp').innerHTML = fcpE ? '<span class="' + grade(fcpE.startTime, 1500, 3000) + '">' + ms(fcpE.startTime) + '</span>' : '—';
+
+  const secs = total / 1000;
+  const cls = grade(total, 2000, 4000);
+  $('fpLoad').innerHTML = '<span class="' + cls + '">' + secs.toFixed(2) + ' s</span>';
+  $('fpBar').style.width = Math.min(100, total / 60) + '%';
+  $('fpVerdict').innerHTML = total <= 2000 ? '✅ Fast — good for visitors on 3G/4G.'
+    : total <= 4000 ? '⚠️ Acceptable — but slow on weak 3G.'
+    : '❌ Too slow — needs optimisation.';
+
+  // ---- edge / PoP ----
+  const e = await getEdge();
+  const code = (e.ray.split('-')[1] || '').toUpperCase();
+  $('cache').textContent = e.cache;
+  if (code) {
+    const city = POP[code] || 'Unknown edge ' + code;
+    $('pop').textContent = city;
+    $('popLine').style.display = 'block';
+    $('popLine').innerHTML = 'CF-RAY <b>' + e.ray + '</b> → your traffic is served from <b>' + city + '</b>.'
+      + (POP[code] ? '' : ' <i>(not yet mapped — send this code to Jimmy)</i>');
+  } else {
+    $('pop').textContent = 'not exposed';
+  }
+  $('net').textContent = netInfo();
+
+  // ---- download speed (3 runs, take best) ----
+  const testFile = new URL('images/p11.webp', location.href).href;
+  let best = null, c1 = null;
+  for (let i = 0; i < 3; i++) {
+    const s = await speed(testFile);
+    if (!best || s.ms < best.ms) best = s;
+    c1 = s;
+  }
+  const mbps = (best.bytes * 8) / (best.ms / 1000) / 1000000;
+  $('mbps').innerHTML = '<span class="' + grade(4000 / mbps, 2000, 4000) + '">' + mbps.toFixed(1) + '</span>'
+    + ' <span style="font-size:15px;font-weight:600">Mb/s</span>';
+  $('mbpsNote').textContent = 'Best of 3 · ' + (best.bytes / 1024).toFixed(0) + ' KB in ' + Math.round(best.ms) + ' ms';
+  $('c1t').textContent = Math.round(best.ms) + ' ms';
+  $('c1s').textContent = (best.bytes / 1024).toFixed(0) + ' KB';
+
+  // ---- compare jmideal.cn ----
+  try {
+    const c2 = await speed('https://www.jmideal.cn/images/p11.jpg');
+    const good = c2.bytes > 2000;
+    $('c2t').textContent = good ? Math.round(c2.ms) + ' ms' : 'n/a';
+    $('c2s').textContent = good ? (c2.bytes / 1024).toFixed(0) + ' KB' : 'n/a';
+  } catch (err) {
+    $('c2t').textContent = 'blocked';
+    $('c2s').textContent = '—';
+  }
+
+  // ---- summary ----
+  const now = new Date();
+  const txt = [
+    'JML speed test · ' + now.toLocaleString(),
+    'Page load: ' + secs.toFixed(2) + ' s   FCP: ' + (fcpE ? Math.round(fcpE.startTime) + ' ms' : 'n/a'),
+    'TTFB: ' + Math.round(ttfb) + ' ms   DNS: ' + Math.round(dns) + ' ms',
+    'Edge: ' + (POP[code] || code || 'n/a') + '   Cache: ' + e.cache,
+    'Network: ' + netInfo(),
+    'Speed: ' + mbps.toFixed(1) + ' Mb/s',
+    'URL: ' + location.host
+  ].join('\n');
+  $('summary').textContent = txt;
+  $('resultCard').style.display = 'block';
+  $('wa').onclick = () => location.href = 'https://wa.me/8613318393556?text=' + encodeURIComponent(txt);
+  $('copy').onclick = () => { navigator.clipboard.writeText(txt); $('copy').textContent = 'Copied ✓'; };
+  window.__done = true;
+}
+
+$('again').onclick = () => location.href = location.pathname + '?r=' + Date.now();
+run();
+</script>
+</body>
+</html>

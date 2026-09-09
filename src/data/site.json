@@ -16,7 +16,9 @@
   },
   "tools": {
     "container": "https://www.jmideal.cn/ac-buddy.html",
-    "ghana": "https://www.jmideal.cn/ac-buddy.html"
+    "ghana": "https://www.jmideal.cn/ac-buddy.html",
+    "landed": "/landed-cost-calculator",
+    "speed": "/speed-test"
   },
   "social": {
     "linkedin": "",
@@ -26,9 +28,22 @@
     "youtube": ""
   },
   "markets": [
-    "Ghana", "Nigeria", "Senegal", "Côte d'Ivoire", "Mali", "Burkina Faso",
-    "Guinea", "Benin", "Togo", "Cameroon", "Kenya", "Tanzania",
-    "Angola", "Mozambique", "UAE", "Saudi Arabia"
+    "Ghana",
+    "Nigeria",
+    "Senegal",
+    "Côte d'Ivoire",
+    "Mali",
+    "Burkina Faso",
+    "Guinea",
+    "Benin",
+    "Togo",
+    "Cameroon",
+    "Kenya",
+    "Tanzania",
+    "Angola",
+    "Mozambique",
+    "UAE",
+    "Saudi Arabia"
   ],
   "socialNote": "Empty links are rendered as \"coming soon\" — fill them in this file when the accounts are live."
 }

@@ -30,22 +30,56 @@
     "tagline": "Yo abrí el mercado africano de Midea. Ahora lo abro para usted.",
     "intro": "En 2001 Midea me dio un billete de ida y me dijo: descubre África. Veinticinco años después he construido una red en más de 30 países y he aprendido que en este mercado la fiabilidad supera al precio siempre.",
     "timeline": [
-      { "year": "1995–2000", "role": "Xinbao / Donlim — Asistente de la Presidencia", "desc": "Asistente de la Presidencia y el único comercial con inglés fluido — llevé las exportaciones del grupo de 0 a 80 millones USD." },
-      { "year": "2001–2004", "role": "Midea — Primer director regional para África", "desc": "Creé el negocio africano de Midea desde cero y la primera red de distribuidores." },
-      { "year": "2005–2010", "role": "Kelon / Hisense — Director general para África", "desc": "Dirigí las operaciones africanas de una segunda marca china, de Lagos a Acra y Nairobi." },
-      { "year": "2010–hoy", "role": "Fundador, Foshan JML Electric", "desc": "Ayudo a distribuidores africanos medianos a comprar directo de fábrica sin necesidad de contenedor completo." }
+      {
+        "year": "1995–2000",
+        "role": "Xinbao / Donlim — Asistente de la Presidencia",
+        "desc": "Asistente de la Presidencia y el único comercial con inglés fluido — llevé las exportaciones del grupo de 0 a 80 millones USD."
+      },
+      {
+        "year": "2001–2004",
+        "role": "Midea — Primer director regional para África",
+        "desc": "Creé el negocio africano de Midea desde cero y la primera red de distribuidores."
+      },
+      {
+        "year": "2005–2010",
+        "role": "Kelon / Hisense — Director general para África",
+        "desc": "Dirigí las operaciones africanas de una segunda marca china, de Lagos a Acra y Nairobi."
+      },
+      {
+        "year": "2010–hoy",
+        "role": "Fundador, Foshan JML Electric",
+        "desc": "Ayudo a distribuidores africanos medianos a comprar directo de fábrica sin necesidad de contenedor completo."
+      }
     ]
   },
   "why": {
     "kicker": "Por qué nos eligen los distribuidores",
     "title": "Seis cosas que los grandes exportadores no harán por usted",
     "items": [
-      { "title": "MOQ desde 10 unidades", "desc": "La mayoría exige un contenedor 40HQ completo. Nosotros empezamos en 10 unidades para probar el mercado." },
-      { "title": "Pague en su moneda", "desc": "Trabajamos con más de 30 monedas locales — GHS, NGN, XOF y más. Sin perseguir cupos de dólares." },
-      { "title": "La exportación KD reduce sus aranceles", "desc": "El envío semidesmontado por encima del 50 % reduce de forma apreciable sus derechos de importación." },
-      { "title": "Posventa sobre el terreno", "desc": "Técnicos en Acra y Kumasi, respuesta en 24 horas. Su cliente nunca queda abandonado." },
-      { "title": "Su propia marca local", "desc": "Ya lanzamos Gold Star Plus en Ghana. Podemos crear su marca privada igual." },
-      { "title": "30 años de acceso a fábrica", "desc": "Autorización directa de Midea y un cuarto de siglo de relaciones. Precio de fábrica, no de intermediario." }
+      {
+        "title": "MOQ desde 10 unidades",
+        "desc": "La mayoría exige un contenedor 40HQ completo. Nosotros empezamos en 10 unidades para probar el mercado."
+      },
+      {
+        "title": "Pague en su moneda",
+        "desc": "Trabajamos con más de 30 monedas locales — GHS, NGN, XOF y más. Sin perseguir cupos de dólares."
+      },
+      {
+        "title": "La exportación KD reduce sus aranceles",
+        "desc": "El envío semidesmontado por encima del 50 % reduce de forma apreciable sus derechos de importación."
+      },
+      {
+        "title": "Posventa sobre el terreno",
+        "desc": "Técnicos en Acra y Kumasi, respuesta en 24 horas. Su cliente nunca queda abandonado."
+      },
+      {
+        "title": "Su propia marca local",
+        "desc": "Ya lanzamos Gold Star Plus en Ghana. Podemos crear su marca privada igual."
+      },
+      {
+        "title": "30 años de acceso a fábrica",
+        "desc": "Autorización directa de Midea y un cuarto de siglo de relaciones. Precio de fábrica, no de intermediario."
+      }
     ]
   },
   "products": {
@@ -65,23 +99,40 @@
   "tools": {
     "kicker": "Herramientas gratuitas",
     "title": "Calcule sus números antes de preguntar",
-    "subtitle": "Dos calculadoras construidas con datos reales de flete y aduanas de Ghana.",
+    "subtitle": "Basadas en datos reales de envio y aranceles vigentes en 9 mercados africanos.",
     "container": "Calculadora de carga de contenedor",
     "containerDesc": "Combine modelos y vea cuántos caben en 20GP / 40GP / 40HQ.",
     "ghana": "Calculadora de costo en destino a Ghana",
     "ghanaDesc": "FOB + flete + 7 partidas arancelarias de Ghana → su precio de venta en GHS.",
-    "openTool": "Abrir la calculadora"
+    "openTool": "Abrir la calculadora",
+    "landed": "Calculadora de Costo en Destino Africa",
+    "landedDesc": "Nigeria, Ghana, Kenia y 6 mercados francofonos - aranceles, IVA, gastos portuarios y precio de venta en moneda local."
   },
   "social": {
     "kicker": "Siga el camino",
     "title": "Cinco canales, una sola voz",
     "subtitle": "Notas de mercado, aperturas de compra conjunta y fotos reales de instalación en África Occidental.",
     "platforms": {
-      "linkedin": { "name": "LinkedIn", "desc": "Ensayos del fundador y análisis B2B" },
-      "facebook": { "name": "Facebook", "desc": "Stock diario y ofertas para distribuidores" },
-      "whatsapp": { "name": "Canal de WhatsApp", "desc": "Alertas instantáneas de precio y flete" },
-      "tiktok": { "name": "TikTok e Instagram", "desc": "Vídeos de instalación y visitas al almacén" },
-      "youtube": { "name": "YouTube", "desc": "Demostraciones y entrevistas" }
+      "linkedin": {
+        "name": "LinkedIn",
+        "desc": "Ensayos del fundador y análisis B2B"
+      },
+      "facebook": {
+        "name": "Facebook",
+        "desc": "Stock diario y ofertas para distribuidores"
+      },
+      "whatsapp": {
+        "name": "Canal de WhatsApp",
+        "desc": "Alertas instantáneas de precio y flete"
+      },
+      "tiktok": {
+        "name": "TikTok e Instagram",
+        "desc": "Vídeos de instalación y visitas al almacén"
+      },
+      "youtube": {
+        "name": "YouTube",
+        "desc": "Demostraciones y entrevistas"
+      }
     }
   },
   "contact": {

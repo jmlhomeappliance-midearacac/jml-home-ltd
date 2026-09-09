@@ -30,22 +30,56 @@
     "tagline": "J'ai ouvert le marché africain de Midea. Aujourd'hui je l'ouvre pour vous.",
     "intro": "En 2001, Midea m'a confié un billet aller simple et m'a dit : débrouille-toi en Afrique. Vingt-cinq ans plus tard, j'ai bâti un réseau dans plus de 30 pays, et j'ai appris qu'ici, la fiabilité compte plus que le prix.",
     "timeline": [
-      { "year": "1995–2000", "role": "Xinbao / Donlim — Assistant du Président", "desc": "Assistant du Président et seul commercial parlant couramment anglais — j'ai fait passer les exportations du groupe de 0 à 80 millions USD." },
-      { "year": "2001–2004", "role": "Midea — Premier directeur régional Afrique", "desc": "Création de l'activité Afrique de Midea à partir de zéro et du premier réseau de distributeurs." },
-      { "year": "2005–2010", "role": "Kelon / Hisense — Directeur général Afrique", "desc": "Direction des opérations africaines d'une seconde marque chinoise, de Lagos à Accra jusqu'à Nairobi." },
-      { "year": "2010–aujourd'hui", "role": "Fondateur, Foshan JML Electric", "desc": "Aider les distributeurs africains de taille moyenne à acheter directement à l'usine sans conteneur complet." }
+      {
+        "year": "1995–2000",
+        "role": "Xinbao / Donlim — Assistant du Président",
+        "desc": "Assistant du Président et seul commercial parlant couramment anglais — j'ai fait passer les exportations du groupe de 0 à 80 millions USD."
+      },
+      {
+        "year": "2001–2004",
+        "role": "Midea — Premier directeur régional Afrique",
+        "desc": "Création de l'activité Afrique de Midea à partir de zéro et du premier réseau de distributeurs."
+      },
+      {
+        "year": "2005–2010",
+        "role": "Kelon / Hisense — Directeur général Afrique",
+        "desc": "Direction des opérations africaines d'une seconde marque chinoise, de Lagos à Accra jusqu'à Nairobi."
+      },
+      {
+        "year": "2010–aujourd'hui",
+        "role": "Fondateur, Foshan JML Electric",
+        "desc": "Aider les distributeurs africains de taille moyenne à acheter directement à l'usine sans conteneur complet."
+      }
     ]
   },
   "why": {
     "kicker": "Pourquoi les distributeurs nous choisissent",
     "title": "Six choses que les gros exportateurs ne feront pas pour vous",
     "items": [
-      { "title": "MOQ dès 10 unités", "desc": "La plupart des exportateurs exigent un conteneur 40HQ complet. Nous démarrons à 10 unités pour tester le marché." },
-      { "title": "Payez dans votre devise", "desc": "Nous réglons en plus de 30 devises locales — GHS, NGN, XOF et autres. Fini la course aux devises." },
-      { "title": "L'export KD réduit vos droits", "desc": "Expédition en semi-démonté à plus de 50 % réduit sensiblement vos droits de douane dans la plupart des marchés." },
-      { "title": "Service après-vente sur place", "desc": "Techniciens basés à Accra et Kumasi, réponse sous 24 heures. Votre client n'est jamais laissé sans solution." },
-      { "title": "Votre propre marque locale", "desc": "Nous avons déjà lancé Gold Star Plus au Ghana. Nous pouvons créer votre marque de la même façon." },
-      { "title": "30 ans d'accès usine", "desc": "Autorisation directe Midea et un quart de siècle de relations. Prix usine, pas prix d'intermédiaire." }
+      {
+        "title": "MOQ dès 10 unités",
+        "desc": "La plupart des exportateurs exigent un conteneur 40HQ complet. Nous démarrons à 10 unités pour tester le marché."
+      },
+      {
+        "title": "Payez dans votre devise",
+        "desc": "Nous réglons en plus de 30 devises locales — GHS, NGN, XOF et autres. Fini la course aux devises."
+      },
+      {
+        "title": "L'export KD réduit vos droits",
+        "desc": "Expédition en semi-démonté à plus de 50 % réduit sensiblement vos droits de douane dans la plupart des marchés."
+      },
+      {
+        "title": "Service après-vente sur place",
+        "desc": "Techniciens basés à Accra et Kumasi, réponse sous 24 heures. Votre client n'est jamais laissé sans solution."
+      },
+      {
+        "title": "Votre propre marque locale",
+        "desc": "Nous avons déjà lancé Gold Star Plus au Ghana. Nous pouvons créer votre marque de la même façon."
+      },
+      {
+        "title": "30 ans d'accès usine",
+        "desc": "Autorisation directe Midea et un quart de siècle de relations. Prix usine, pas prix d'intermédiaire."
+      }
     ]
   },
   "products": {
@@ -65,23 +99,40 @@
   "tools": {
     "kicker": "Outils gratuits",
     "title": "Calculez vos chiffres avant de demander",
-    "subtitle": "Deux calculateurs construits à partir de données réelles de fret et de douane ghanéenne.",
+    "subtitle": "Baties sur des donnees reelles d'expedition et les tarifs douaniers de 9 marches africains.",
     "container": "Calculateur de chargement conteneur",
     "containerDesc": "Mélangez les modèles, voyez combien tiennent en 20GP / 40GP / 40HQ.",
     "ghana": "Calculateur de coût de revient Ghana",
     "ghanaDesc": "FOB + fret + 7 lignes de droits ghanéens → votre prix de vente en GHS.",
-    "openTool": "Ouvrir le calculateur"
+    "openTool": "Ouvrir le calculateur",
+    "landed": "Calculateur de Cout de Revient Afrique",
+    "landedDesc": "Nigeria, Ghana, Kenya et 6 marches francophones - droits, TVA, frais portuaires et prix de vente en monnaie locale."
   },
   "social": {
     "kicker": "Suivez l'aventure",
     "title": "Cinq canaux, une seule voix",
     "subtitle": "Notes de marché, ouvertures d'achats groupés et photos réelles d'installation en Afrique de l'Ouest.",
     "platforms": {
-      "linkedin": { "name": "LinkedIn", "desc": "Analyses de marché et écrits du fondateur" },
-      "facebook": { "name": "Facebook", "desc": "Stock quotidien et offres distributeurs" },
-      "whatsapp": { "name": "Chaîne WhatsApp", "desc": "Alertes instantanées sur prix et fret" },
-      "tiktok": { "name": "TikTok & Instagram", "desc": "Vidéos d'installation et visites d'entrepôt" },
-      "youtube": { "name": "YouTube", "desc": "Démonstrations produits et interviews" }
+      "linkedin": {
+        "name": "LinkedIn",
+        "desc": "Analyses de marché et écrits du fondateur"
+      },
+      "facebook": {
+        "name": "Facebook",
+        "desc": "Stock quotidien et offres distributeurs"
+      },
+      "whatsapp": {
+        "name": "Chaîne WhatsApp",
+        "desc": "Alertes instantanées sur prix et fret"
+      },
+      "tiktok": {
+        "name": "TikTok & Instagram",
+        "desc": "Vidéos d'installation et visites d'entrepôt"
+      },
+      "youtube": {
+        "name": "YouTube",
+        "desc": "Démonstrations produits et interviews"
+      }
     }
   },
   "contact": {

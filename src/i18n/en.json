@@ -30,22 +30,56 @@
     "tagline": "I opened Midea's Africa market. Now I open it for you.",
     "intro": "In 2001 Midea handed me a one-way ticket and said: figure out Africa. Twenty-five years later I have built distribution in 30+ countries, and learned that in this market, reliability beats price every single time.",
     "timeline": [
-      { "year": "1995–2000", "role": "Xinbao / Donlim — Assistant to the President", "desc": "Assistant to the President, and the only salesperson with fluent English — I grew the group's export business from 0 to USD 80 million." },
-      { "year": "2001–2004", "role": "Midea — First Regional Sales Director, Africa", "desc": "Built Midea's Africa business from zero. Set up the first distributor network across West and East Africa." },
-      { "year": "2005–2010", "role": "Kelon / Hisense — General Manager, Africa", "desc": "Ran a second Chinese brand's Africa operations, deepening relationships from Lagos to Accra to Nairobi." },
-      { "year": "2010–now", "role": "Founder, Foshan JML Electric", "desc": "Helping small and mid-size African distributors buy factory-direct without needing a full container." }
+      {
+        "year": "1995–2000",
+        "role": "Xinbao / Donlim — Assistant to the President",
+        "desc": "Assistant to the President, and the only salesperson with fluent English — I grew the group's export business from 0 to USD 80 million."
+      },
+      {
+        "year": "2001–2004",
+        "role": "Midea — First Regional Sales Director, Africa",
+        "desc": "Built Midea's Africa business from zero. Set up the first distributor network across West and East Africa."
+      },
+      {
+        "year": "2005–2010",
+        "role": "Kelon / Hisense — General Manager, Africa",
+        "desc": "Ran a second Chinese brand's Africa operations, deepening relationships from Lagos to Accra to Nairobi."
+      },
+      {
+        "year": "2010–now",
+        "role": "Founder, Foshan JML Electric",
+        "desc": "Helping small and mid-size African distributors buy factory-direct without needing a full container."
+      }
     ]
   },
   "why": {
     "kicker": "Why distributors choose us",
     "title": "Six things the big exporters won't do for you",
     "items": [
-      { "title": "MOQ from 10 units", "desc": "Most exporters want a full 40HQ container. We start at 10 units so you can test the market before you commit." },
-      { "title": "Pay in your own currency", "desc": "We settle in 30+ local currencies — GHS, NGN, XOF, and more. No scrambling for USD allocation." },
-      { "title": "KD export cuts your duty", "desc": "Semi-knocked-down shipment at 50%+ knockdown rate meaningfully lowers your import duty in most African markets." },
-      { "title": "After-sales team on the ground", "desc": "Accra and Kumasi based technicians, 24-hour response. Your customer is not left hanging." },
-      { "title": "Your own local brand", "desc": "We already launched Gold Star Plus in Ghana. We can build your private label the same way." },
-      { "title": "30 years of factory access", "desc": "Direct Midea authorization plus a quarter century of relationships. You get factory pricing, not trader pricing." }
+      {
+        "title": "MOQ from 10 units",
+        "desc": "Most exporters want a full 40HQ container. We start at 10 units so you can test the market before you commit."
+      },
+      {
+        "title": "Pay in your own currency",
+        "desc": "We settle in 30+ local currencies — GHS, NGN, XOF, and more. No scrambling for USD allocation."
+      },
+      {
+        "title": "KD export cuts your duty",
+        "desc": "Semi-knocked-down shipment at 50%+ knockdown rate meaningfully lowers your import duty in most African markets."
+      },
+      {
+        "title": "After-sales team on the ground",
+        "desc": "Accra and Kumasi based technicians, 24-hour response. Your customer is not left hanging."
+      },
+      {
+        "title": "Your own local brand",
+        "desc": "We already launched Gold Star Plus in Ghana. We can build your private label the same way."
+      },
+      {
+        "title": "30 years of factory access",
+        "desc": "Direct Midea authorization plus a quarter century of relationships. You get factory pricing, not trader pricing."
+      }
     ]
   },
   "products": {
@@ -65,23 +99,40 @@
   "tools": {
     "kicker": "Free tools",
     "title": "Work out your numbers before you ask",
-    "subtitle": "Two calculators built from real shipping and Ghana customs data.",
+    "subtitle": "Built from real shipping data and current customs tariffs across 9 African markets.",
     "container": "Container Loading Calculator",
     "containerDesc": "Mix any models, see how many fit a 20GP / 40GP / 40HQ.",
     "ghana": "Ghana Landed Cost Calculator",
     "ghanaDesc": "FOB + freight + 7 Ghana duty lines → your retail price in GHS.",
-    "openTool": "Open the calculator"
+    "openTool": "Open the calculator",
+    "landed": "Africa Landed Cost Calculator",
+    "landedDesc": "Nigeria, Ghana, Kenya plus 6 Francophone markets - duty, VAT, port fees and retail price in local currency."
   },
   "social": {
     "kicker": "Follow the journey",
     "title": "Five channels, one voice",
     "subtitle": "Market notes, container-groupbuy openings, and real install photos from across West Africa.",
     "platforms": {
-      "linkedin": { "name": "LinkedIn", "desc": "Founder essays and B2B market analysis" },
-      "facebook": { "name": "Facebook", "desc": "Daily stock updates and dealer offers" },
-      "whatsapp": { "name": "WhatsApp Channel", "desc": "Instant alerts on price and shipping changes" },
-      "tiktok": { "name": "TikTok & Instagram", "desc": "Install videos and warehouse walkthroughs" },
-      "youtube": { "name": "YouTube", "desc": "Product demos and dealer interviews" }
+      "linkedin": {
+        "name": "LinkedIn",
+        "desc": "Founder essays and B2B market analysis"
+      },
+      "facebook": {
+        "name": "Facebook",
+        "desc": "Daily stock updates and dealer offers"
+      },
+      "whatsapp": {
+        "name": "WhatsApp Channel",
+        "desc": "Instant alerts on price and shipping changes"
+      },
+      "tiktok": {
+        "name": "TikTok & Instagram",
+        "desc": "Install videos and warehouse walkthroughs"
+      },
+      "youtube": {
+        "name": "YouTube",
+        "desc": "Product demos and dealer interviews"
+      }
     }
   },
   "contact": {
